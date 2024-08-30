@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Amal Saji Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="assets/css/meyawo.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">Portfolio</a>
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#portfolio">Projects</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#packages">Packages</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#service">Service</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+                <li class="item ml-md-3">
+                    <a href="components.html" class="btn btn-primary">Components</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span>
+                <span class="down">I am Amal Saji</span>
+            </h1>
+            <p class="header-subtitle">FULL STACK DEVELOPER</p>
+
+            <a href="https://github.com/amalsaj" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                Visit My Works
+              </a>
+              
+              
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center ">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/imgs/profile.png" class="about-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">Who Am I ?</p>
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p>
+                        Hello, I'm Amal Saji, a Computer Science graduate from the College of Engineering, Pathanapuram. Proficient in Python, Go, HTML5, CSS, JavaScript, React.js, Node.js, and MongoDB, I have worked on projects like a Flood Prediction system using ML, an Attendance Management System with Face Recognition, and an Employee Management System using the MERN stack. My experience as a Full Stack Developer at Algomox Private Limited helped me master Angular, Go, Git, PostgreSQL, and Cassandra.<br>I'm a problem-solver, adaptable, and an effective communicator, fluent in Malayalam, English, Hindi, and Tamil. My goal is to continue growing as a full stack developer and contribute to innovative web applications.
+                    </p>
+                    <button class="btn-rounded btn btn-outline-primary pricing-card-btn" id="downloadCvButton">Download CV</button>
+                    <script>
+                        document.getElementById('downloadCvButton').addEventListener('click', function() {
+                            const link = document.createElement('a');
+                            link.href = 'assets/file/Amal_Resume.pdf'; 
+                            link.download = 'Amal_Resume.pdf'; 
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+                        });
+                        </script>
+                </div>
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+    <!-- service section -->
+    <section class="section" id="service">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Do ?</p>
+            <h6 class="section-title mb-6">Service</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/front.png"
+                                alt="Download"
+                                class="icon">
+                            <h6 class="title">Front-End Development</h6>
+                            <p class="subtitle">Designing and implementing the visual and interactive aspects of a web application that users directly interact with.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/back.png"
+                                alt="Download"
+                                class="icon">
+                            <h6 class="title">Back-End Development</h6>
+                            <p class="subtitle">Creating the server and database parts of a website or app that handle the behind-the-scenes functionality.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/server.png"
+                                alt="Download"
+                                class="icon">
+                            <h6 class="title">Full Stack Services</h6>
+                            <p class="subtitle">Handling both the visible and hidden parts of a website or app to make sure everything works together smoothly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/test.png"
+                                alt="Downloade"
+                                class="icon">
+                            <h6 class="title">Software Testing</h6>
+                            <p class="subtitle">Checking and validating a website or app to find and fix any problems and ensure it works as it should.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+        </div>
+    </section><!-- end of service section -->
+
+    <!-- portfolio section -->
+    <section class="section" id="portfolio">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Did?</p>
+            <h6 class="section-title mb-6">Projects</h6>
+            <div class="row">
+                <!-- Portfolio Item 1 -->
+                <div class="col-md-4 mt-4">
+                    <div class="portfolio-card">
+                        <div class="card-header">
+                            <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
+                            <div class="project-info">
+                                <h5>Netflix Clone 2.0</h5>
+                                <p>Web Application</p>
+                            </div>
+                            <div class='icon'>
+                            <i class="fa-solid fa-star star-icon"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="status completed">COMPLETED</span>
+                            <p class="description">A Netflix clone in React with user authentication, movie browsing, trailer watching, and full responsiveness.</p>
+                            <div class="technologies">
+                                <span class="react">React</span>
+                                <span class="java">JavaScript</span>
+                                <span class="css3">Axios</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="links">
+                                <i class="fa-brands fa-github m-1 iconHover" id="githubNetflix"></i>
+                                <i class="fa-solid fa-arrow-up-right-from-square iconHover" id="deployNetflix"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Portfolio Item 2 -->
+                <div class="col-md-4 mt-4">
+                    <div class="portfolio-card">
+                        <div class="card-header">
+                            <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
+                            <div class="project-info">
+                                <h5>Employee Management <br> System</h5>
+                                <p>Web Application</p>
+                            </div>
+                            <i class="fa-solid fa-star star-icon"></i>
+                        </div>
+                        <div class="card-body">
+                            <span class="status completed">COMPLETED</span>
+                            <p class="description">An Employee Management System with authentication, a dashboard, and features like search, pagination, real-time notifications, and responsive design.</p>
+                            <div class="technologies">
+                                <span class="react">React</span>
+                                <span class="express">Express</span>
+                                <span class="java">JavaScript</span>
+                                <span class="mongo">MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="links">
+                                <i class="fa-brands fa-github m-1 iconHover" id="githubEmp"></i>
+                                <i class="fa-solid fa-arrow-up-right-from-square iconHover" id="deployEmp"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Portfolio Item 3 -->
+                <div class="col-md-4 mt-4">
+                    <div class="portfolio-card">
+                        <div class="card-header">
+                            <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
+                            <div class="project-info">
+                                <h5>Personalized Music App</h5>
+                                <p>Web Application</p>
+                            </div>
+                            <i class="fa-solid fa-star star-icon"></i>
+                        </div>
+                        <div class="card-body">
+                            <span class="status completed">COMPLETED</span>
+                            <p class="description">A personalized music app in React.js delivers a seamless experience with tailored playlists and recommendations.</p>
+                            <div class="technologies">
+                                <span class="react">React</span>
+                                <span class="express">Express</span>
+                                <span class="java">JavaScript</span>
+                                <span class="mongo">MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="links">
+                                <i class="fa-brands fa-github m-1 iconHover" id="githubMusic"></i>
+                                <i class="fa-solid fa-arrow-up-right-from-square iconHover" id="deployMusic"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Portfolio Item 4 -->
+                <div class="col-md-4 mt-4">
+                    <div class="portfolio-card">
+                        <div class="card-header">
+                            <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
+                            <div class="project-info">
+                                <h5>Flood Prediction</h5>
+                                <p>Web Application</p>
+                            </div>
+                            <i class="fa-solid fa-star star-icon"></i>
+                        </div>
+                        <div class="card-body">
+                            <span class="status completed">COMPLETED</span>
+                            <p class="description">Our project focuses on predicting floods in various regions and sending alert messages to registered users.</p>
+                            <div class="technologies">
+                                <span class="html5">Html</span>
+                                <span class="css3">CSS</span>
+                                <span class="java">JavaScript</span>
+                                <span class="aws">Python</span>
+                                <span class="docker">Flask</span>
+                                <span class="postgresql">SQLite</span>
+                                <span class="ruby">Twilio</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="links">
+                                <i class="fa-brands fa-github m-1 iconHover" id="githubFlood"></i>
+                                <i class="fa-solid fa-arrow-up-right-from-square iconHover" id="deployFlood"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <script>
+                    function openUrl(elementId, url) {
+                        document.getElementById(elementId).addEventListener('click', function() {
+                            window.open(url, '_blank');
+                        });
+                    }   
+                    openUrl('githubFlood', 'https://github.com/amalsaj/Flood-Prediction-using-Machine-Learning');
+                    openUrl('githubEmp', 'https://github.com/amalsaj/EmployeeClient');
+                    openUrl('githubNetflix', 'https://github.com/amalsaj/Netflix_Clone-using-React');
+                    openUrl('githubMusic', 'https://github.com/amalsaj/Personalized-Music-Platform-Client');
+                    openUrl('deployEmp', 'https://employeeclient.onrender.com/');
+                    openUrl('deployNetflix', 'https://netflixclone2-0.onrender.com');
+                    openUrl('deployFlood', 'https://floodpredictionapp.onrender.com'); <!-- Updated the correct id -->
+                </script>
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section> <!-- end of portfolio section -->
+    
+    
+
+  <!-- Package Section -->
+<section class="section" id="packages">
+    <div class="container text-center">
+        <p class="section-subtitle">Explore My npm Packages</p>
+        <h2 class="section-title mb-6">Package Details</h2>
+        <!-- Row -->
+        <div class="pricing-wrapper">
+            <!-- Package 1 -->
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <img class="pricing-card-icon" src="assets/imgs/npm.png" alt="Package Icon">
+                </div>
+                <div class="pricing-card-body">
+                    <h5 class="pricing-card-title">India District Codes</h5>
+                    <p class="pricing-card-caption">A simple npm package that provides district codes for all districts in India.</p>
+                    <ul class="pricing-card-list">
+                        <li>Easy to fetch codes by district name</li>
+                        <li>Minimal package size</li>
+                    </ul>
+                    <div class="pricing-card-footer">
+                        <a href="https://www.npmjs.com/package/india-district-codes" class="btn btn-primary pricing-card-btn" target="_blank">View on npm</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Package 2 -->
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <img class="pricing-card-icon" src="assets/imgs/npm.png" alt="Package Icon">
+                </div>
+                <div class="pricing-card-body">
+                    <h5 class="pricing-card-title">Package Name</h5>
+                    <p class="pricing-card-caption">An overview of this package’s purpose, its features, and its benefits.</p>
+                    <ul class="pricing-card-list">
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                    </ul>
+                    <div class="pricing-card-footer">
+                        <a href="https://www.npmjs.com/package/package-two" class="btn btn-primary pricing-card-btn" target="_blank">View on npm</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Packages can be added similarly -->
+        </div><!-- End of Pricing Wrapper -->
+    </div> <!-- End of Container -->
+</section><!-- End of Packages Section -->
+
+    
+    
+
+    <!-- section -->
+    <section class="section-sm bg-primary">
+        <!-- container -->
+        <div class="container text-center text-sm-left">
+            <!-- row -->
+            <div class="row align-items-center">
+                <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                    <h6 class="title text-light">Want to work with me?</h6>
+                    <p class="m-0 text-light">Always feel Free to Contact & Hire me</p>
+                </div>
+                <div class="col-sm offset-sm-2 offset-md-3">
+                    <a href="mailto:amalsaji218@gmail.com" class="btn btn-lg my-font btn-light rounded">Hire Me</a>
+                </div>                
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of section -->
+
+    <!-- testimonial section -->
+
+    <!-- contact section -->
+   
+    
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">How can you communicate?</p>
+            <h6 class="section-title mb-5">Contact Me</h6>
+            <!-- contact form -->
+            <form id="contact-form" class="contact-form col-md-10 col-lg-8 m-auto">
+                <input type="hidden" name="contact_number" value="697483">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input type="text" name="user_name" size="50" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="email" name="user_email" class="form-control" placeholder="Enter Email" required>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea name="message" id="comment" rows="6" class="form-control" placeholder="Write Something"></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                    </div>
+                </div>
+            </form><!-- end of contact form -->
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init('geA5hSP0NM2qnnlRp'); 
+      })();
+    </script>
+    <script>
+      document.getElementById('contact-form').addEventListener('submit', async function(event) {
+        event.preventDefault(); 
+        
+        const form = this;
+        try {
+          await emailjs.sendForm('service_6jwnusv', 'template_yu1p8vc', form);
+        } catch (error) {
+          console.error(error);
+        }
+      });
+    </script>
+    
+    
+
+    <!-- footer -->
+    <!-- end of page footer -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js"></script>
+
+</body>
+
+</html>
