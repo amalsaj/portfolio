@@ -11575,6 +11575,14 @@ p {
   opacity: 1;
   visibility: visible;
 }
+
+/* Container styling */
+.portfolio-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
 /*/ portfolio wrapper */
 .portfolio-card {
   background-color: #fff;
@@ -11582,7 +11590,6 @@ p {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   padding: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  width: 370px;
   height: 420px;
   display: flex;
   flex-direction: column;
@@ -11921,6 +11928,19 @@ p {
   text-decoration: none;
   font-size: 14px;
   transition: background-color 0.3s ease;
+}
+
+.downloadCvButton{
+  background-color:#695aa6;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+.downloadCvButton:hover{
+  background-color:#692aa6;
 }
 
 /* testmonial card */

@@ -67,7 +67,7 @@
               
         </div>
     </header><!-- end of page header -->
-
+<div>
     <!-- about section -->
     <section class="section pt-0" id="about">
         <!-- container -->
@@ -82,9 +82,9 @@
                     <p class="section-subtitle">Who Am I ?</p>
                     <h2 class="section-title mb-3">About Me</h2>
                     <p>
-                        Hello, I'm Amal Saji, a Computer Science graduate from the College of Engineering, Pathanapuram. Proficient in Python, Go, HTML5, CSS, JavaScript, React.js, Node.js, and MongoDB, I have worked on projects like a Flood Prediction system using ML, an Attendance Management System with Face Recognition, and an Employee Management System using the MERN stack. My experience as a Full Stack Developer at Algomox Private Limited helped me master Angular, Go, Git, PostgreSQL, and Cassandra.<br>I'm a problem-solver, adaptable, and an effective communicator, fluent in Malayalam, English, Hindi, and Tamil. My goal is to continue growing as a full stack developer and contribute to innovative web applications.
+                        Hello, I'm Amal Saji, a Computer Science graduate from the College of Engineering, Pathanapuram. Proficient in Python, Go, HTML5, CSS, JavaScript, React.js, Node.js, and MongoDB, I have worked on projects like a Flood Prediction system using ML, an Attendance Management System with Face Recognition, and an Employee Management System using the MERN stack. My experience as a Full Stack Developer at Algomox Private Limited helped me master Angular, Go, Git, PostgreSQL, and Cassandra.I'm a problem-solver, adaptable, and an effective communicator, fluent in Malayalam, English, Hindi, and Tamil. My goal is to continue growing as a full stack developer and contribute to innovative web applications.
                     </p>
-                    <button class="btn-rounded btn btn-outline-primary pricing-card-btn" id="downloadCvButton">Download CV</button>
+                    <button class="btn-rounded btn btn-outline-primary downloadCvButton" id="downloadCvButton">Download CV</button>
                     <script>
                         document.getElementById('downloadCvButton').addEventListener('click', function() {
                             const link = document.createElement('a');
@@ -160,9 +160,9 @@
         <div class="container text-center">
             <p class="section-subtitle">What I Did?</p>
             <h6 class="section-title mb-6">Projects</h6>
-            <div class="row">
+            <div class="portfolio-wrapper">
                 <!-- Portfolio Item 1 -->
-                <div class="col-md-4 mt-4">
+              
                     <div class="portfolio-card">
                         <div class="card-header">
                             <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
@@ -190,10 +190,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
     
                 <!-- Portfolio Item 2 -->
-                <div class="col-md-4 mt-4">
+              
                     <div class="portfolio-card">
                         <div class="card-header">
                             <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
@@ -220,10 +219,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+          
     
                 <!-- Portfolio Item 3 -->
-                <div class="col-md-4 mt-4">
+              
                     <div class="portfolio-card">
                         <div class="card-header">
                             <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
@@ -250,10 +249,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
-    
+            
                 <!-- Portfolio Item 4 -->
-                <div class="col-md-4 mt-4">
+          
                     <div class="portfolio-card">
                         <div class="card-header">
                             <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
@@ -283,8 +281,62 @@
                             </div>
                         </div>
                     </div>
-                </div>
-    
+
+             <!-- Portfolio Item 6 -->
+                    <div class="portfolio-card">
+                        <div class="card-header">
+                            <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
+                            <div class="project-info">
+                                <h5>To Do Application</h5>
+                                <p>Web Application</p>
+                            </div>
+                            <i class="fa-solid fa-star star-icon"></i>
+                        </div>
+                        <div class="card-body">
+                            <span class="status completed">COMPLETED</span>
+                            <p class="description">A To-Do application helps users keep track of and manage their tasks.</p>
+                            <div class="technologies">
+                                <span class="html5">Html</span>
+                                <span class="css3">CSS</span>
+                                <span class="java">JavaScript</span>
+                                <span class="react">React</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="links">
+                                <i class="fa-brands fa-github m-1 iconHover" id="githubToDo"></i>
+                                <i class="fa-solid fa-arrow-up-right-from-square iconHover" id="deployToDo"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="card-header">
+                            <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
+                            <div class="project-info">
+                                <h5>KTU Website 2.0</h5>
+                                <p>Web Application</p>
+                            </div>
+                            <i class="fa-solid fa-star star-icon"></i>
+                        </div>
+                        <div class="card-body">
+                            <span class="status completed">COMPLETED</span>
+                            <p class="description">The project upgraded the user interface and experience with a responsive, visually appealing design for smooth interaction.</p>
+                            <div class="technologies">
+                                <span class="html5">Html</span>
+                                <span class="css3">CSS</span>
+                                <span class="java">JavaScript</span>
+                                <span class="react">React</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="links">
+                                <i class="fa-brands fa-github m-1 iconHover" id="githubKtu"></i>
+                                <i class="fa-solid fa-arrow-up-right-from-square iconHover" id="deployKtu"></i>
+                            </div>
+                        </div>
+                    </div>
+
                 <script>
                     function openUrl(elementId, url) {
                         document.getElementById(elementId).addEventListener('click', function() {
@@ -295,16 +347,19 @@
                     openUrl('githubEmp', 'https://github.com/amalsaj/EmployeeClient');
                     openUrl('githubNetflix', 'https://github.com/amalsaj/Netflix_Clone-using-React');
                     openUrl('githubMusic', 'https://github.com/amalsaj/Personalized-Music-Platform-Client');
+                    openUrl('githubKtu', 'https://github.com/amalsaj/KTU-website-redesign-using-React');
+                    openUrl('githubToDo', 'https://github.com/amalsaj/todoClient');
                     openUrl('deployEmp', 'https://employeeclient.onrender.com/');
                     openUrl('deployNetflix', 'https://netflixclone2-0.onrender.com');
-                    openUrl('deployFlood', 'https://floodpredictionapp.onrender.com'); <!-- Updated the correct id -->
+                    openUrl('deployFlood', 'https://floodpredictionapp.onrender.com');
+                    openUrl('deployKtu', 'https://floodpredictionapp.onrender.com');
+                    openUrl('deployToDo', 'https://todoclient-d0ld.onrender.com');
                 </script>
             </div><!-- end of row -->
         </div><!-- end of container -->
     </section> <!-- end of portfolio section -->
     
     
-
   <!-- Package Section -->
 <section class="section" id="packages">
     <div class="container text-center">
