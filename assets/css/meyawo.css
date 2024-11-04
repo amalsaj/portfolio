@@ -11686,6 +11686,84 @@ p {
   line-height: 1.5;
 }
 
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light gray background */
+  border-radius: 10px;
+}
+
+.skill-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #333333; /* Default button color */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1 1 150px; /* Allow buttons to grow and shrink with a minimum width */
+  max-width: 200px; /* Maximum width for buttons */
+}
+
+.skill-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Specific colors for each skill */
+.skill-btn.html5 { background-color: #E44D26; }    /* HTML5 color */
+.skill-btn.css3 { background-color: #264DE4; }     /* CSS3 color */
+.skill-btn.java { background-color: #F7E018; color: #333333; } /* JavaScript color */
+.skill-btn.react { background-color: #61DAFB; color: #333333; } /* React color */
+.skill-btn.native { background-color: #61DAFB; color: #333333; } /* React Native color */
+.skill-btn.node { background-color: #68A063; }     /* Node.js color */
+.skill-btn.express { background-color: #333333; }  /* Express.js color */
+.skill-btn.mongo { background-color: #4DB33D; }    /* MongoDB color */
+.skill-btn.postgresql { background-color: #336791; } /* PostgreSQL color */
+.skill-btn.typescript { background-color: #3178C6; } /* TypeScript color */
+.skill-btn.angular { background-color: #DD0031; }   /* Angular color */
+.skill-btn.python { background-color: #306998; }    /* Python color */
+.skill-btn.git { background-color: #F05032; }       /* Git color */
+.skill-btn.rest { background-color: #6DB3F2; }      /* REST API color */
+.skill-btn.graphql { background-color: #E10098; }   /* GraphQL color */
+.skill-btn.aws { background-color: #FF9900; }       /* AWS color */
+.skill-btn.azure { background-color: #0078D7; }     /* Azure DevOps color */
+.skill-btn.docker { background-color: #0db7ed; }    /* Docker color */
+.skill-btn.kubernetes { background-color: #326CE5; } /* Kubernetes color */
+.skill-btn.tailwind { background-color: #38B2AC; }  /* Tailwind CSS color */
+.skill-btn.sass { background-color: #CD6799; }      /* Sass color */
+.skill-btn.sql { background-color: #00758F; }       /* SQL color */
+.skill-btn.java-lang { background-color: #007396; } /* Java language color */
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .skill-btn {
+    flex: 1 1 calc(33% - 10px); /* Three buttons per row */
+    
+  }
+}
+
+@media (max-width: 400px) {
+  .skill-btn {
+    flex: 1 1 calc(50% - 10px); /* Two buttons per row */
+      max-width: none; /* Remove max-width to allow full width */
+      font-size: 14px; /* Slightly smaller font size */
+  }
+}
+
+
+@media (min-width: 901px) {
+  .skill-btn {
+      flex: 1 1 calc(33% - 10px); /* Three buttons per row */
+  }
+}
+
 .technologies {
   display: flex;
   flex-wrap: wrap;

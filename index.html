@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with Meyawo landing page.">
     <meta name="author" content="Devcrud">
-    <title>Amal Saji Portfolio</title>
+    <title>Amal Saji</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
@@ -30,13 +30,16 @@
                     <a class="link" href="#about">About</a>
                 </li>
                 <li class="item">
+                    <a class="link" href="#service">Service</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#skills">Skills</a>
+                </li>
+                <li class="item">
                     <a class="link" href="#portfolio">Projects</a>
                 </li>
                 <li class="item">
                     <a class="link" href="#packages">Packages</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#service">Service</a>
                 </li>
                 <li class="item">
                     <a class="link" href="#contact">Contact</a>
@@ -100,58 +103,74 @@
         </div><!-- end of container -->
     </section> <!-- end of about section -->
 
-    <!-- service section -->
-    <section class="section" id="service">
+ <!-- Services Section -->
+<section id="service" style="padding: 4rem 1rem; background-color: #ffffff; color: #333333;" class="section">
+    <div style="max-width: 1200px; margin: auto; text-align: center;">
+        <p class="section-subtitle">What I Offer?</p>
+        <h2 class="section-title mb-6">My Services</h2>
+        
+        <!-- Service Cards -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
+            <div style="flex: 1 1 220px; background-color: #f9fafb; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; padding: 2rem; text-align: center;"
+                onmouseover="this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)'; this.style.transform='scale(1.05)';"
+                onmouseout="this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)'; this.style.transform='scale(1)';">
+                <img src="assets/imgs/front.png" alt="Front-End Development" style="width: 60px; height: 60px; margin-bottom: 1.5rem;">
+                <h4 style="font-size: 1.2rem; font-weight: 300; margin-bottom: 0.5rem;">Front-End Development</h4>
+                <p style="font-size: 1rem; color: #6B7280;">Crafting responsive and visually appealing user interfaces that enhance user experience.</p>
+            </div>
+
+            <div style="flex: 1 1 220px; background-color: #f9fafb; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; padding: 2rem; text-align: center;"
+                onmouseover="this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)'; this.style.transform='scale(1.05)';"
+                onmouseout="this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)'; this.style.transform='scale(1)';">
+                <img src="assets/imgs/back.png" alt="Back-End Development" style="width: 60px; height: 60px; margin-bottom: 1.5rem;">
+                <h4 style="font-size: 1.2rem; font-weight: 300; margin-bottom: 0.5rem;">Back-End Development</h4>
+                <p style="font-size: 1rem; color: #6B7280;">Building robust server-side applications to ensure seamless functionality.</p>
+            </div>
+
+            <div style="flex: 1 1 220px; background-color: #f9fafb; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; padding: 2rem; text-align: center;"
+                onmouseover="this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)'; this.style.transform='scale(1.05)';"
+                onmouseout="this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)'; this.style.transform='scale(1)';">
+                <img src="assets/imgs/server.png" alt="Full Stack Development" style="width: 60px; height: 60px; margin-bottom: 1.5rem;">
+                <h4 style="font-size: 1.2rem; font-weight: 300; margin-bottom: 0.5rem;">Full Stack Development</h4>
+                <p style="font-size: 1rem; color: #6B7280;">Integrating front-end and back-end technologies for complete solutions.</p>
+            </div>
+
+            <div style="flex: 1 1 220px; background-color: #f9fafb; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; padding: 2rem; text-align: center;"
+                onmouseover="this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)'; this.style.transform='scale(1.05)';"
+                onmouseout="this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)'; this.style.transform='scale(1)';">
+                <img src="assets/imgs/test.png" alt="Software Testing" style="width: 60px; height: 60px; margin-bottom: 1.5rem;">
+                <h4 style="font-size: 1.2rem; font-weight: 300; margin-bottom: 0.5rem;">Software Testing</h4>
+                <p style="font-size: 1rem; color: #6B7280;">Ensuring high-quality software through rigorous testing and validation.</p>
+            </div>
+        </div> <!-- end of service cards -->
+    </div>
+</section> <!-- end of services section -->
+
+    <section class="section" id="skills">
         <div class="container text-center">
-            <p class="section-subtitle">What I Do ?</p>
-            <h6 class="section-title mb-6">Service</h6>
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/front.png"
-                                alt="Download"
-                                class="icon">
-                            <h6 class="title">Front-End Development</h6>
-                            <p class="subtitle">Designing and implementing the visual and interactive aspects of a web application that users directly interact with.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/back.png"
-                                alt="Download"
-                                class="icon">
-                            <h6 class="title">Back-End Development</h6>
-                            <p class="subtitle">Creating the server and database parts of a website or app that handle the behind-the-scenes functionality.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/server.png"
-                                alt="Download"
-                                class="icon">
-                            <h6 class="title">Full Stack Services</h6>
-                            <p class="subtitle">Handling both the visible and hidden parts of a website or app to make sure everything works together smoothly.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/test.png"
-                                alt="Downloade"
-                                class="icon">
-                            <h6 class="title">Software Testing</h6>
-                            <p class="subtitle">Checking and validating a website or app to find and fix any problems and ensure it works as it should.</p>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- end of row -->
+            <p class="section-subtitle">What I Specialize In?</p>
+            <h6 class="section-title mb-6">Skills</h6>
+            <div class="skills-container">
+                <button class="skill-btn html5">HTML5</button>
+                <button class="skill-btn css3">CSS3</button>
+                <button class="skill-btn java">JavaScript</button>
+                <button class="skill-btn react">React.js</button>
+                <button class="skill-btn native">React Native</button>
+                <button class="skill-btn node">Node.js</button>
+                <button class="skill-btn express">Express.js</button>
+                <button class="skill-btn mongo">MongoDB</button>
+                <button class="skill-btn postgresql">PostgreSQL</button>
+                <button class="skill-btn typescript">TypeScript</button>
+                <button class="skill-btn angular">Angular.js</button>
+                <button class="skill-btn python">Python</button>
+                <button class="skill-btn git">Git</button>
+                <button class="skill-btn rest">REST APIs</button>
+                <button class="skill-btn tailwind">Tailwind CSS</button>
+                <button class="skill-btn sass">Sass</button>
+                <button class="skill-btn sql">SQL</button>
+               
+            </div>
+            
         </div>
     </section><!-- end of service section -->
 
