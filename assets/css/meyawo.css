@@ -11735,8 +11735,20 @@ p {
     flex: 1 1 45%;
     margin: 10px 0;
     padding: 10px 20px;
+  justify-content: center;
+
   }
 }
+
+@media (max-width: 500px) {
+  .skill-btn {
+    flex: 1 1 100%; /* One button per row */
+    margin: 5px 0;
+    padding: 10px 20px;
+    justify-content: center;
+  }
+}
+
 
 .technologies {
   font-size: 1.5rem;
