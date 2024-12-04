@@ -11583,26 +11583,30 @@ p {
   gap: 30px;
 }
 
+@media (max-width: 767px) {
+  .portfolio-wrapper {
+    grid-template-columns: 1fr; /* Mobile: 1 card */
+  }
+}
+
+
 /*/ portfolio wrapper */
 .portfolio-card {
-  background-color: #fff;
-  border-radius: 16px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  padding: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  height: 420px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0 auto;
+  width: 100%; /* Equivalent to w-full */
+  padding: 1rem; /* Equivalent to p-4 (4 * 0.25rem = 1rem) */
+  background-color: white; /* Equivalent to bg-white */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); /* Equivalent to shadow-lg */
+  border-radius: 1rem; /* Equivalent to rounded-2xl */
   transition: transform 0.3s, box-shadow 0.3s;
-  position: relative;
+  
 }
 
 .portfolio-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
+
+
 
 .card-header {
   display: flex;
@@ -11611,10 +11615,10 @@ p {
 
 .icon-img {
   width: 48px;
+  background-color: rgb(243 243 243);
   height: 48px;
-  border-radius: 50%;
+  border-radius: 15%;
   object-fit: cover;
-  border: 2px solid #e0e0e0;
   margin-right: 16px; 
 }
 
@@ -11622,7 +11626,11 @@ p {
   display: flex;
   text-align: start;
   flex-direction: column;
+  gap: 3px;
+  
 }
+
+
 
 .project-info h5 {
   margin: 0;
@@ -11640,14 +11648,14 @@ p {
 }
 
 .star-icon {
-  color: #c27803;  
+  color: rgb(194 120 3);
   border-radius: 50%; 
-  border: 2px solid #e0e0e0;
-  font-size: 16px; 
+  border: 1px solid #e0e0e0;
+  font-size: 1rem; 
   position: absolute;
-  top: 20px; 
-  right: 20px;
-  width: 25px; 
+  top: 6px; 
+  right: 2px;
+  width: 30px; 
   height: 25px; 
   display: flex; 
   align-items: center;  
@@ -11660,6 +11668,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 4px;
 }
 
 .status {
@@ -11674,7 +11683,8 @@ p {
 
 .status.completed {
   background-color: #e6f9ea;
-  color: #2b6a1f;
+  color: rgb(4 108 78);
+  width: fit-content;
 }
 
 .description {
@@ -11689,82 +11699,47 @@ p {
 .skills-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
   justify-content: center;
-  padding: 20px;
-  background-color: #f8f9fa; /* Light gray background */
-  border-radius: 10px;
+  gap: 20px;
+  margin-top: 30px;
 }
 
 .skill-btn {
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: 500;
-  color: #ffffff;
-  background-color: #333333; /* Default button color */
+ background: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 50px;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 12px;
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  flex: 1 1 150px; /* Allow buttons to grow and shrink with a minimum width */
-  max-width: 200px; /* Maximum width for buttons */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  box-shadow: 0 6px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
 .skill-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transform: scale(1.1);
 }
 
-/* Specific colors for each skill */
-.skill-btn.html5 { background-color: #E44D26; }    /* HTML5 color */
-.skill-btn.css3 { background-color: #264DE4; }     /* CSS3 color */
-.skill-btn.java { background-color: #F7E018; color: #333333; } /* JavaScript color */
-.skill-btn.react { background-color: #61DAFB; color: #333333; } /* React color */
-.skill-btn.native { background-color: #61DAFB; color: #333333; } /* React Native color */
-.skill-btn.node { background-color: #68A063; }     /* Node.js color */
-.skill-btn.express { background-color: #333333; }  /* Express.js color */
-.skill-btn.mongo { background-color: #4DB33D; }    /* MongoDB color */
-.skill-btn.postgresql { background-color: #336791; } /* PostgreSQL color */
-.skill-btn.typescript { background-color: #3178C6; } /* TypeScript color */
-.skill-btn.angular { background-color: #DD0031; }   /* Angular color */
-.skill-btn.python { background-color: #306998; }    /* Python color */
-.skill-btn.git { background-color: #F05032; }       /* Git color */
-.skill-btn.rest { background-color: #6DB3F2; }      /* REST API color */
-.skill-btn.graphql { background-color: #E10098; }   /* GraphQL color */
-.skill-btn.aws { background-color: #FF9900; }       /* AWS color */
-.skill-btn.azure { background-color: #0078D7; }     /* Azure DevOps color */
-.skill-btn.docker { background-color: #0db7ed; }    /* Docker color */
-.skill-btn.kubernetes { background-color: #326CE5; } /* Kubernetes color */
-.skill-btn.tailwind { background-color: #38B2AC; }  /* Tailwind CSS color */
-.skill-btn.sass { background-color: #CD6799; }      /* Sass color */
-.skill-btn.sql { background-color: #00758F; }       /* SQL color */
-.skill-btn.java-lang { background-color: #007396; } /* Java language color */
-
-/* Responsive Styles */
-@media (max-width: 600px) {
-  .skill-btn {
-    flex: 1 1 calc(33% - 10px); /* Three buttons per row */
-    
-  }
-}
-
-@media (max-width: 400px) {
-  .skill-btn {
-    flex: 1 1 calc(50% - 10px); /* Two buttons per row */
-      max-width: none; /* Remove max-width to allow full width */
-      font-size: 14px; /* Slightly smaller font size */
-  }
+.skill-btn i {
+  font-size: 28px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 
-@media (min-width: 901px) {
+@media (max-width: 768px) {
   .skill-btn {
-      flex: 1 1 calc(33% - 10px); /* Three buttons per row */
+    flex: 1 1 45%;
+    margin: 10px 0;
+    padding: 10px 20px;
   }
 }
 
 .technologies {
+  font-size: 1.5rem;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;

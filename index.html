@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
     <!-- Bootstrap + Meyawo main styles -->
     <link rel="stylesheet" href="assets/css/meyawo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -147,33 +150,79 @@
     </div>
 </section> <!-- end of services section -->
 
-    <section class="section" id="skills">
-        <div class="container text-center">
-            <p class="section-subtitle">What I Specialize In?</p>
-            <h6 class="section-title mb-6">Skills</h6>
-            <div class="skills-container">
-                <button class="skill-btn html5">HTML5</button>
-                <button class="skill-btn css3">CSS3</button>
-                <button class="skill-btn java">JavaScript</button>
-                <button class="skill-btn react">React.js</button>
-                <button class="skill-btn native">React Native</button>
-                <button class="skill-btn node">Node.js</button>
-                <button class="skill-btn express">Express.js</button>
-                <button class="skill-btn mongo">MongoDB</button>
-                <button class="skill-btn postgresql">PostgreSQL</button>
-                <button class="skill-btn typescript">TypeScript</button>
-                <button class="skill-btn angular">Angular.js</button>
-                <button class="skill-btn python">Python</button>
-                <button class="skill-btn git">Git</button>
-                <button class="skill-btn rest">REST APIs</button>
-                <button class="skill-btn tailwind">Tailwind CSS</button>
-                <button class="skill-btn sass">Sass</button>
-                <button class="skill-btn sql">SQL</button>
-               
-            </div>
-            
+<section class="section" id="skills">
+    <div class="container text-center">
+        <p class="section-subtitle">What I Specialize In?</p>
+        <h6 class="section-title mb-6">Skills</h6>
+        <div class="skills-container">
+            <button class="skill-btn">
+                <i class="devicon-html5-plain-wordmark colored"></i>
+                HTML5
+            </button>
+            <button class="skill-btn">
+                <i class="devicon-css3-plain-wordmark colored"></i>
+                CSS3
+            </button>
+            <button class="skill-btn">
+                <i class="devicon-javascript-plain colored"></i>
+                JavaScript
+            </button>
+            <button class="skill-btn">
+                <i class="devicon-react-original-wordmark colored"></i>
+                React.js
+            </button>
+            <button class="skill-btn">
+                <i class="devicon-redux-original colored"></i>
+                Redux
+            </button>
+            <button class="skill-btn">
+                <i class="devicon-nextjs-original-wordmark"></i>
+                Next.js
+            </button>
+            <button class="skill-btn">
+                <i class="devicon-nodejs-plain-wordmark colored"></i>
+                Node.js
+            </button>
+            <button class="skill-btn">
+                <i class="devicon-express-original-wordmark"></i>
+                Express.js
+            </button>
+            <button class="skill-btn">
+                <i class="devicon-mongodb-plain-wordmark colored"></i>
+                MongoDB
+            </button>
+            <button class="skill-btn">
+                <i class="devicon-postgresql-plain colored"></i>
+                PostgreSQL
+            </button>
+            <button class="skill-btn">
+                <i class="devicon-angularjs-plain-wordmark colored"></i>
+                Angular.js
+            </button>
+            <button class="skill-btn">
+                <i class="devicon-python-plain-wordmark colored"></i>
+                Python
+            </button>
+            <button class="skill-btn">
+                <i class="devicon-git-plain-wordmark colored"></i>
+                Git
+            </button>
+            <button class="skill-btn">
+                <i class="devicon-tailwindcss-plain-wordmark colored"></i>
+                Tailwind CSS
+            </button>
+            <button class="skill-btn">
+                <i class="devicon-sass-original colored"></i>
+                Sass
+            </button>
+            <button class="skill-btn">
+                <i class="devicon-mysql-plain-wordmark colored"></i>
+                SQL
+            </button>
         </div>
-    </section><!-- end of service section -->
+    </div>
+</section>
+
 
     <!-- portfolio section -->
     <section class="section" id="portfolio">
@@ -190,17 +239,15 @@
                                 <h5>Netflix Clone 2.0</h5>
                                 <p>Web Application</p>
                             </div>
-                            <div class='icon'>
                             <i class="fa-solid fa-star star-icon"></i>
-                            </div>
                         </div>
                         <div class="card-body">
                             <span class="status completed">COMPLETED</span>
                             <p class="description">A Netflix clone in React with user authentication, movie browsing, trailer watching, and full responsiveness.</p>
                             <div class="technologies">
-                                <span class="react">React</span>
-                                <span class="java">JavaScript</span>
-                                <span class="css3">Axios</span>
+                                <i class="devicon-react-original-wordmark colored"></i>
+                                <i class="devicon-javascript-plain colored"></i>                           
+                                <i class="devicon-axios-plain-wordmark colored"></i>
                             </div>
                         </div>
                         <div class="card-footer">
@@ -217,7 +264,7 @@
                         <div class="card-header">
                             <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
                             <div class="project-info">
-                                <h5>Employee Management <br> System</h5>
+                                <h5>Employee Management System</h5>
                                 <p>Web Application</p>
                             </div>
                             <i class="fa-solid fa-star star-icon"></i>
@@ -226,10 +273,11 @@
                             <span class="status completed">COMPLETED</span>
                             <p class="description">An Employee Management System with authentication, a dashboard, and features like search, pagination, real-time notifications, and responsive design.</p>
                             <div class="technologies">
-                                <span class="react">React</span>
-                                <span class="express">Express</span>
-                                <span class="java">JavaScript</span>
-                                <span class="mongo">MongoDB</span>
+                                <i class="devicon-react-original-wordmark colored"></i>
+                                <i class="devicon-javascript-plain colored"></i>                           
+                                <i class="devicon-axios-plain-wordmark colored"></i>
+                                <i class="devicon-express-original-wordmark"></i>
+                                <i class="devicon-mongodb-plain-wordmark colored"></i>
                             </div>
                         </div>
                         <div class="card-footer">
@@ -256,11 +304,12 @@
                             <span class="status completed">COMPLETED</span>
                             <p class="description">A personalized music app in React.js delivers a seamless experience with tailored playlists and recommendations.</p>
                             <div class="technologies">
-                                <span class="react">React</span>
-                                <span class="express">Express</span>
-                                <span class="java">JavaScript</span>
-                                <span class="mongo">MongoDB</span>
-                                <span class="php">Tailwind</span>
+                                <i class="devicon-react-original-wordmark colored"></i>
+                                <i class="devicon-javascript-plain colored"></i>                           
+                                <i class="devicon-axios-plain-wordmark colored"></i>
+                                <i class="devicon-express-original-wordmark"></i>
+                                <i class="devicon-mongodb-plain-wordmark colored"></i>
+                                <i class="devicon-tailwindcss-plain-wordmark colored"></i>
                             </div>
                         </div>
                         <div class="card-footer">
@@ -270,14 +319,13 @@
                             </div>
                         </div>
                     </div>
-            
                 <!-- Portfolio Item 4 -->
           
                     <div class="portfolio-card">
                         <div class="card-header">
                             <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
                             <div class="project-info">
-                                <h5>Flood Prediction</h5>
+                                <h5>Flood Prediction Using ML</h5>
                                 <p>Web Application</p>
                             </div>
                             <i class="fa-solid fa-star star-icon"></i>
@@ -286,19 +334,17 @@
                             <span class="status completed">COMPLETED</span>
                             <p class="description">Our project focuses on predicting floods in various regions and sending alert messages to registered users.</p>
                             <div class="technologies">
-                                <span class="html5">Html</span>
-                                <span class="css3">CSS</span>
-                                <span class="java">JavaScript</span>
-                                <span class="aws">Python</span>
-                                <span class="docker">Flask</span>
-                                <span class="postgresql">SQLite</span>
-                                <span class="ruby">Twilio</span>
+                                <i class="devicon-html5-plain-wordmark colored"></i>
+                                <i class="devicon-css3-plain-wordmark colored"></i>
+                                <i class="devicon-javascript-plain colored"></i>
+                                <i class="devicon-python-plain-wordmark colored"></i>                       
+                             <i class="devicon-flask-original-wordmark colored"></i>     
+                             <i class="devicon-sqlite-plain-wordmark colored"></i>
                             </div>
                         </div>
                         <div class="card-footer">
                             <div class="links">
                                 <i class="fa-brands fa-github m-1 iconHover" id="githubFlood"></i>
-                                <i class="fa-solid fa-arrow-up-right-from-square iconHover" id="deployFlood"></i>
                             </div>
                         </div>
                     </div>
@@ -317,10 +363,10 @@
                             <span class="status completed">COMPLETED</span>
                             <p class="description">A To-Do application helps users keep track of and manage their tasks.</p>
                             <div class="technologies">
-                                <span class="html5">Html</span>
-                                <span class="css3">CSS</span>
-                                <span class="java">JavaScript</span>
-                                <span class="react">React</span>
+                                <i class="devicon-html5-plain-wordmark colored"></i>
+                                <i class="devicon-css3-plain-wordmark colored"></i>
+                                <i class="devicon-javascript-plain colored"></i>
+                                <i class="devicon-react-original-wordmark colored"></i>
                             </div>
                         </div>
                         <div class="card-footer">
@@ -344,16 +390,16 @@
                             <span class="status completed">COMPLETED</span>
                             <p class="description">The project upgraded the user interface and experience with a responsive, visually appealing design for smooth interaction.</p>
                             <div class="technologies">
-                                <span class="html5">Html</span>
-                                <span class="css3">CSS</span>
-                                <span class="java">JavaScript</span>
-                                <span class="react">React</span>
+                                <i class="devicon-html5-plain-wordmark colored"></i>
+                                <i class="devicon-css3-plain-wordmark colored"></i>
+                                <i class="devicon-javascript-plain colored"></i>
+                                <i class="devicon-react-original-wordmark colored"></i>
                             </div>
                         </div>
                         <div class="card-footer">
                             <div class="links">
                                 <i class="fa-brands fa-github m-1 iconHover" id="githubKtu"></i>
-                                <i class="fa-solid fa-arrow-up-right-from-square iconHover" id="deployKtu"></i>
+                              
                             </div>
                         </div>
                     </div>
@@ -370,16 +416,46 @@
                             <span class="status completed">COMPLETED</span>
                             <p class="description">The project improved the task manager application with a clean, responsive design for easy use and better task management.</p>
                             <div class="technologies">
-                                <span class="react">React</span>
-                                <span class="express">Express</span>
-                                <span class="java">JavaScript</span>
-                                <span class="mongo">MongoDB</span>
+                                <i class="devicon-react-original-wordmark colored"></i>                         
+                                <i class="devicon-axios-plain-wordmark colored"></i>
+                                <i class="devicon-express-original-wordmark"></i>
+                                <i class="devicon-mongodb-plain-wordmark colored"></i>
                             </div>
                         </div>
                         <div class="card-footer">
                             <div class="links">
                                 <i class="fa-brands fa-github m-1 iconHover" id="githubManage"></i>
                                 <i class="fa-solid fa-arrow-up-right-from-square iconHover" id="deployManage"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="portfolio-card">
+                        <div class="card-header">
+                            <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
+                            <div class="project-info">
+                                <h5>E-commerce Website</h5>
+                                <p>Web Application</p>
+                            </div>
+                            <i class="fa-solid fa-star star-icon"></i>
+                        </div>
+                        <div class="card-body">
+                            <span class="status completed">IN PROGRESS</span>
+                            <p class="description">
+                                Shop fresh groceries online and get them delivered fast with our Next.js-powered platform.
+                              </p>                              
+                            <div class="technologies">
+                                <i class="devicon-nextjs-original-wordmark"></i>
+                                <i class="devicon-javascript-plain colored"></i>
+                                <i class="devicon-express-original-wordmark"></i>
+                                <i class="devicon-mongodb-plain-wordmark colored"></i>
+                                <i class="devicon-tailwindcss-plain-wordmark colored"></i>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="links">
+                                <i class="fa-brands fa-github m-1 iconHover" id="githubFlood"></i>
                             </div>
                         </div>
                     </div>
