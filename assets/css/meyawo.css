@@ -11588,6 +11588,96 @@ p {
     grid-template-columns: 1fr; /* Mobile: 1 card */
   }
 }
+/* Services Section */
+#service {
+  padding: 4rem 1rem;
+  color: #333333;
+}
+
+/* Container for services */
+#service .section {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center; /* Centers the content */
+}
+
+/* Subtitle style */
+#service .section-subtitle {
+  margin-bottom: 1rem;
+  text-align: center; /* Centers the subtitle */
+}
+
+/* Title style */
+#service .section-title {
+  margin-bottom: 2rem;
+  text-align: center; /* Centers the title */
+}
+
+/* Service cards container */
+#service .service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Individual service card */
+#service .service-card {
+  flex: 1 1 calc(25% - 2rem); /* Default: Four cards per row */
+  background-color: #f9fafb;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Hover effect on service card */
+#service .service-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+/* Image inside service card */
+#service .service-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1.5rem;
+}
+
+/* Heading inside service card */
+#service .service-card h4 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraph inside service card */
+#service .service-card p {
+  font-size: 1rem;
+  color: #6B7280;
+}
+
+/* Media Queries for responsiveness */
+
+/* Medium Screens (768px - 1199px) */
+@media (max-width: 1199px) {
+  #service .service-card {
+    flex: 1 1 calc(45% - 2rem); /* Two cards per row */
+  }
+}
+
+/* Small Screens (<768px) */
+@media (max-width: 567px) {
+  #service .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #service .service-card {
+    flex: 1 1 100%; /* One card per row */
+  }
+}
 
 /*/ portfolio wrapper */
 .portfolio-card {
@@ -11627,7 +11717,7 @@ p {
 
 .project-info h5 {
   margin: 0;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
   color: #333;
   text-transform: capitalize;
@@ -11636,7 +11726,7 @@ p {
 
 .project-info p {
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
   color: #666;
 }
 
@@ -11879,6 +11969,7 @@ p {
   color: white !important;
   background-color: #777bb4 !important; /* PHP Purple */
 }
+
 
 /* Ruby */
 .ruby {
@@ -12761,6 +12852,56 @@ pre .code {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+/* Toggle button styles */
+.mode-toggle {
+  border: none !important; /* Ensure no border */
+  margin-left: 200px;
+  outline: none !important; /* Remove focus outline */
+  background: transparent; /* Transparent background */
+  cursor: pointer; /* Pointer cursor */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px; /* Adjust width */
+  height: 30px; /* Adjust height */
+  border-radius: 50%; /* Fully rounded button */
+  position: relative; /* Required for smooth animations */
+  transition: transform 0.3s ease; /* Smooth animation */
+}
+
+/* Icon styles */
+.mode-toggle i {
+  position: absolute; /* Overlay icons */
+  font-size: 23px; /* Adjust icon size */
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Moon icon (default) */
+#moonIcon {
+  color: black;
+  transform: scale(1); /* Default size */
+  opacity: 1; /* Fully visible */
+}
+
+/* Hidden moon */
+#moonIcon:not(.visible) {
+  transform: scale(0); /* Shrink to invisible */
+  opacity: 0; /* Fully transparent */
+}
+
+/* Sun icon (default hidden) */
+#sunIcon {
+  color: white;
+  transform: scale(0); /* Hidden size */
+  opacity: 0; /* Fully transparent */
+}
+
+/* Visible sun */
+#sunIcon.visible {
+  transform: scale(1); /* Fully visible */
+  opacity: 1; /* Fully opaque */
 }
 
 .header .overlay {

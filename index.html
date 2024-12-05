@@ -13,7 +13,67 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
+    <style>
+        body.dark {
+            background-color: hsl(240 10% 3.9%);
+            color: white;
+        }
+        
+        body.dark .section-subtitle,
+        body.dark .para,
+        body.dark .pricing-card h5,
+        body.dark .pricing-card p,
+        body.dark .pricing-card li,
+        body.dark .project-info h5,
+        body.dark .project-info p,
+        body.dark .description,
+        body.dark .header .header-content .header-title .up,
+        body.dark .header .header-content .header-title .down,
+        body.dark .header .header-content .header-subtitle,
+        body.dark #service .service-card p,
+        body.dark .links i,body.dark h1,
+        body.dark h2,
+        body.dark h3,
+        body.dark h4,
+        body.dark h6 ,body.dark .custom-navbar.affix .logo{
+            color: white;
+        } 
+        
+        body.dark .portfolio-card,
+        body.dark .pricing-card,
+        body.dark #service .service-card,
+        body.dark .skill-btn,
+        body.dark .custom-navbar.affix{
+            background-color: rgb(24 24 27);
+            color:white;
+        }
+        
+        body.dark .icon-img {
+            background-color: rgb(75 85 99);
+        }
+        
+        body.dark .header {
+            background-image: none;
+            color: white;
+        }
+        
+        body.dark .header .overlay {
+            background-image: none;
+        }
+        body.dark .pricing-card-header {
+            background-color: #3b3b3b;
+        }
+        body.dark .pricing-card-btn  {
+            background-color: #695aa6;
+        }
+        body.dark .bg-primary {
+            background-color: rgb(24 24 27) !important;
+            color: #121212; /* Optional: Adjust text color for contrast */
+        }
+        
+
+        
+    </style>
     <!-- Bootstrap + Meyawo main styles -->
     <link rel="stylesheet" href="assets/css/meyawo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +83,8 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <!-- Page Navbar -->
-    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">       
+          
         <div class="container">
             <a class="logo" href="#">Portfolio</a>
             <ul class="nav">
@@ -49,6 +110,10 @@
                     <a class="link" href="#contact">Contact</a>
                 </li>
             </ul>
+            <button id="modeToggle" class="mode-toggle" onclick="myFunction()">
+                <i id="moonIcon" class="fa-solid fa-moon visible"></i>
+                <i id="sunIcon" class="fa-solid fa-sun"></i>
+              </button>   
             <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
                 <div class="hamburger-box">
                     <div class="hamburger-inner"></div>
@@ -70,11 +135,52 @@
             <a href="https://github.com/amalsaj" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 Visit My Works
               </a>
+
+              
               
               
         </div>
     </header><!-- end of page header -->
+
 <div>
+
+    <script>
+        // Initialize theme based on local storage
+        document.addEventListener('DOMContentLoaded', () => {
+            const storedTheme = localStorage.getItem('theme') || 'light';
+            const body = document.body;
+            const moonIcon = document.getElementById('moonIcon');
+            const sunIcon = document.getElementById('sunIcon');
+
+            if (storedTheme === 'dark') {
+                body.classList.add('dark');
+                moonIcon.classList.remove('visible');
+                sunIcon.classList.add('visible');
+            } else {
+                body.classList.remove('dark');
+                moonIcon.classList.add('visible');
+                sunIcon.classList.remove('visible');
+            }
+        });
+
+        function myFunction() {
+            let body = document.body;
+            const moonIcon = document.getElementById('moonIcon');
+            const sunIcon = document.getElementById('sunIcon');
+
+            // Toggle the dark class
+            body.classList.toggle('dark');
+
+            // Toggle icon visibility
+            moonIcon.classList.toggle('visible');
+            sunIcon.classList.toggle('visible');
+
+            // Store the current theme in local storage
+            const currentTheme = body.classList.contains('dark') ? 'dark' : 'light';
+            localStorage.setItem('theme', currentTheme);
+        }
+    </script>
+
     <!-- about section -->
     <section class="section pt-0" id="about">
         <!-- container -->
@@ -88,7 +194,7 @@
                 <div class="about-caption">
                     <p class="section-subtitle">Who Am I ?</p>
                     <h2 class="section-title mb-3">About Me</h2>
-                    <p>
+                    <p class="para">
                         Hi, I’m Amal Saji, a full stack developer with skills in JavaScript, Python, Go, React.js, Node.js, and database management with MongoDB and PostgreSQL. I also have experience in React Native for mobile application development. I specialize in both frontend and backend development, enabling me to build complete and efficient applications. My strong problem-solving abilities help me tackle challenges effectively, and I’m always eager to learn new technologies and improve my skills. Being fluent in Malayalam, English, Hindi, and Tamil allows me to communicate effectively with diverse teams and clients. My goal is to continue growing as a developer and contribute to creating innovative web and mobile applications that provide great user experiences.
                     </p>
                     <button class="btn-rounded btn btn-outline-primary downloadCvButton" id="downloadCvButton">Download CV</button>
@@ -107,48 +213,41 @@
         </div><!-- end of container -->
     </section> <!-- end of about section -->
 
- <!-- Services Section -->
-<section id="service" style="padding: 4rem 1rem; background-color: #ffffff; color: #333333;" class="section">
-    <div style="max-width: 1200px; margin: auto; text-align: center;">
+<!-- Services Section -->
+<section id="service" class="section">
+    <div class="service-container">
         <p class="section-subtitle">What I Offer?</p>
         <h2 class="section-title mb-6">My Services</h2>
         
         <!-- Service Cards -->
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
-            <div style="flex: 1 1 220px; background-color: #f9fafb; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; padding: 2rem; text-align: center;"
-                onmouseover="this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)'; this.style.transform='scale(1.05)';"
-                onmouseout="this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)'; this.style.transform='scale(1)';">
-                <img src="assets/imgs/front.png" alt="Front-End Development" style="width: 60px; height: 60px; margin-bottom: 1.5rem;">
-                <h4 style="font-size: 1.2rem; font-weight: 300; margin-bottom: 0.5rem;">Front-End Development</h4>
-                <p style="font-size: 1rem; color: #6B7280;">Crafting responsive and visually appealing user interfaces that enhance user experience.</p>
+        <div class="service-cards">
+            <div class="service-card">
+                <img src="assets/imgs/front.png" alt="Front-End Development">
+                <h4>Front-End Development</h4>
+                <p>Crafting responsive and visually appealing user interfaces that enhance user experience.</p>
             </div>
 
-            <div style="flex: 1 1 220px; background-color: #f9fafb; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; padding: 2rem; text-align: center;"
-                onmouseover="this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)'; this.style.transform='scale(1.05)';"
-                onmouseout="this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)'; this.style.transform='scale(1)';">
-                <img src="assets/imgs/back.png" alt="Back-End Development" style="width: 60px; height: 60px; margin-bottom: 1.5rem;">
-                <h4 style="font-size: 1.2rem; font-weight: 300; margin-bottom: 0.5rem;">Back-End Development</h4>
-                <p style="font-size: 1rem; color: #6B7280;">Building robust server-side applications to ensure seamless functionality.</p>
+            <div class="service-card">
+                <img src="assets/imgs/back.png" alt="Back-End Development">
+                <h4>Back-End Development</h4>
+                <p>Building robust server-side applications to ensure seamless functionality.</p>
             </div>
 
-            <div style="flex: 1 1 220px; background-color: #f9fafb; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; padding: 2rem; text-align: center;"
-                onmouseover="this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)'; this.style.transform='scale(1.05)';"
-                onmouseout="this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)'; this.style.transform='scale(1)';">
-                <img src="assets/imgs/server.png" alt="Full Stack Development" style="width: 60px; height: 60px; margin-bottom: 1.5rem;">
-                <h4 style="font-size: 1.2rem; font-weight: 300; margin-bottom: 0.5rem;">Full Stack Development</h4>
-                <p style="font-size: 1rem; color: #6B7280;">Integrating front-end and back-end technologies for complete solutions.</p>
+            <div class="service-card">
+                <img src="assets/imgs/server.png" alt="Full Stack Development">
+                <h4>Full Stack Development</h4>
+                <p>Integrating front-end and back-end technologies for complete solutions.</p>
             </div>
 
-            <div style="flex: 1 1 220px; background-color: #f9fafb; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; padding: 2rem; text-align: center;"
-                onmouseover="this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)'; this.style.transform='scale(1.05)';"
-                onmouseout="this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)'; this.style.transform='scale(1)';">
-                <img src="assets/imgs/test.png" alt="Software Testing" style="width: 60px; height: 60px; margin-bottom: 1.5rem;">
-                <h4 style="font-size: 1.2rem; font-weight: 300; margin-bottom: 0.5rem;">Software Testing</h4>
-                <p style="font-size: 1rem; color: #6B7280;">Ensuring high-quality software through rigorous testing and validation.</p>
+            <div class="service-card">
+                <img src="assets/imgs/test.png" alt="Software Testing">
+                <h4>Software Testing</h4>
+                <p>Ensuring high-quality software through rigorous testing and validation.</p>
             </div>
         </div> <!-- end of service cards -->
     </div>
 </section> <!-- end of services section -->
+
 
 <section class="section" id="skills">
     <div class="container text-center">
@@ -331,7 +430,7 @@
                         <div class="card-header">
                             <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
                             <div class="project-info">
-                                <h5>Flood Prediction Using ML</h5>
+                                <h5>Flood Prediction</h5>
                                 <p>Web Application</p>
                             </div>
                             <i class="fa-solid fa-star star-icon"></i>
@@ -527,7 +626,7 @@
 
 
     <!-- section -->
-    <section class="section-sm bg-primary">
+    <section class="section-sm bg-primary hire-me">
         <!-- container -->
         <div class="container text-center text-sm-left">
             <!-- row -->
