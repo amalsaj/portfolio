@@ -209,11 +209,17 @@
             </button>
             <button class="skill-btn">
                 <i class="devicon-tailwindcss-plain-wordmark colored"></i>
-                Tailwind CSS
+                Tailwind
             </button>
             <button class="skill-btn">
                 <i class="devicon-sass-original colored"></i>
                 Sass
+            </button>
+            <button class="skill-btn">
+             
+            <i class="devicon-materialui-plain colored"></i>
+          
+               MUI
             </button>
             <button class="skill-btn">
                 <i class="devicon-mysql-plain-wordmark colored"></i>
@@ -367,6 +373,8 @@
                                 <i class="devicon-css3-plain-wordmark colored"></i>
                                 <i class="devicon-javascript-plain colored"></i>
                                 <i class="devicon-react-original-wordmark colored"></i>
+                                <i class="devicon-express-original-wordmark"></i>
+                                <i class="devicon-mongodb-plain-wordmark colored"></i>
                             </div>
                         </div>
                         <div class="card-footer">
@@ -567,22 +575,32 @@
     
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
-      (function () {
-        emailjs.init('geA5hSP0NM2qnnlRp'); 
-      })();
-    </script>
-    <script>
-      document.getElementById('contact-form').addEventListener('submit', async function(event) {
-        event.preventDefault(); 
-        
-        const form = this;
-        try {
-          await emailjs.sendForm('service_6jwnusv', 'template_yu1p8vc', form);
-        } catch (error) {
-          console.error(error);
-        }
-      });
-    </script>
+        (function () {
+          emailjs.init('geA5hSP0NM2qnnlRp');
+        })();
+      </script>
+      
+      <script>
+        document.getElementById('contact-form').addEventListener('submit', async function(event) {
+          event.preventDefault();
+          
+          const form = this;
+          try {
+            // Send the form data using EmailJS
+            await emailjs.sendForm('service_6jwnusv', 'template_yu1p8vc', form);
+            
+            // Show success notification
+            alert('Message sent successfully!');
+            
+            // Optionally, clear the form after submission
+            form.reset();
+          } catch (error) {
+            console.error(error);
+            // Show error notification
+            alert('Something went wrong. Please try again later.');
+          }
+        });
+      </script>      
     
     
 
