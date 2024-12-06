@@ -51,6 +51,7 @@
         body.dark .icon-img {
             background-color: rgb(75 85 99);
         }
+
         
         body.dark .header {
             background-image: none;
@@ -61,21 +62,52 @@
             background-image: none;
         }
         body.dark .pricing-card-header {
-            background-color: #3b3b3b;
+            background: linear-gradient(135deg, #695aa6, #4b437b);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+
         }
-        body.dark .pricing-card-btn  {
-            background-color: #695aa6;
+        body.dark .pricing-card-btn ,body.dark .btn-outline-primary ,body.dark .btn-light{
+            background-color: #695aa6 !important;
+            color: white;
+            border: none !important;
         }
         body.dark .bg-primary {
             background-color: rgb(24 24 27) !important;
-            color: #121212; /* Optional: Adjust text color for contrast */
+            color: #121212;
         }
+
+/* Apply styles only below 600px */
+@media (max-width: 600px) {
+    body.dark .custom-navbar .nav {
+        background-color: rgb(24 24 27);
+        color: white !important;
+    }
+    body.dark .custom-navbar .custom-navbar .nav .item .link:hover{
+        color: white !important;
+    }
+}
+
+
+      /* Default Style */
+.white-filter {
+  color: black; /* Default color is black */
+  filter: none; /* No filter applied by default */
+}
+
+/* Dark Mode Style */
+body.dark .white-filter {
+  color: #fff; /* In dark mode, set the text color to white */
+  filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(0deg); /* Apply a filter for color manipulation */
+}
+
         
 
         
     </style>
     <!-- Bootstrap + Meyawo main styles -->
     <link rel="stylesheet" href="assets/css/meyawo.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/particle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Handlee&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -135,9 +167,7 @@
             <a href="https://github.com/amalsaj" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 Visit My Works
               </a>
-
-              
-              
+             
               
         </div>
     </header><!-- end of page header -->
@@ -212,6 +242,7 @@
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
     </section> <!-- end of about section -->
+    <!-- <div id="particle-container"></div> -->
 
 <!-- Services Section -->
 <section id="service" class="section">
@@ -222,25 +253,25 @@
         <!-- Service Cards -->
         <div class="service-cards">
             <div class="service-card">
-                <img src="assets/imgs/front.png" alt="Front-End Development">
+                <img src="assets/imgs/one.svg" alt="Front-End Development" class="white-filter" />  
                 <h4>Front-End Development</h4>
                 <p>Crafting responsive and visually appealing user interfaces that enhance user experience.</p>
             </div>
 
             <div class="service-card">
-                <img src="assets/imgs/back.png" alt="Back-End Development">
+                <img src="assets/imgs/back.svg" alt="Back-End Development" class="white-filter">
                 <h4>Back-End Development</h4>
                 <p>Building robust server-side applications to ensure seamless functionality.</p>
             </div>
 
             <div class="service-card">
-                <img src="assets/imgs/server.png" alt="Full Stack Development">
+                <img src="assets/imgs/server.svg" alt="Full Stack Development" class="white-filter">
                 <h4>Full Stack Development</h4>
                 <p>Integrating front-end and back-end technologies for complete solutions.</p>
             </div>
 
             <div class="service-card">
-                <img src="assets/imgs/test.png" alt="Software Testing">
+                <img src="assets/imgs/test.svg" alt="Software Testing" class="white-filter">
                 <h4>Software Testing</h4>
                 <p>Ensuring high-quality software through rigorous testing and validation.</p>
             </div>
@@ -248,7 +279,11 @@
     </div>
 </section> <!-- end of services section -->
 
-
+<div class="container-particle">
+    <div class="wrap">
+      <!-- Particles dynamically generated in JavaScript -->
+    </div>
+  </div>
 <section class="section" id="skills">
     <div class="container text-center">
         <p class="section-subtitle">What I Specialize In?</p>
@@ -344,7 +379,7 @@
                                 <h5>Netflix Clone 2.0</h5>
                                 <p>Web Application</p>
                             </div>
-                            <i class="fa-solid fa-star star-icon"></i>
+                            <!-- <i class="fa-solid fa-star star-icon"></i> -->
                         </div>
                         <div class="card-body">
                             <span class="status completed">COMPLETED</span>
@@ -372,7 +407,7 @@
                                 <h5>Employee Management System</h5>
                                 <p>Web Application</p>
                             </div>
-                            <i class="fa-solid fa-star star-icon"></i>
+                            <!-- <i class="fa-solid fa-star star-icon"></i> -->
                         </div>
                         <div class="card-body">
                             <span class="status completed">COMPLETED</span>
@@ -403,7 +438,7 @@
                                 <h5>Personalized Music App</h5>
                                 <p>Web Application</p>
                             </div>
-                            <i class="fa-solid fa-star star-icon"></i>
+                            <!-- <i class="fa-solid fa-star star-icon"></i> -->
                         </div>
                         <div class="card-body">
                             <span class="status completed">COMPLETED</span>
@@ -433,7 +468,7 @@
                                 <h5>Flood Prediction</h5>
                                 <p>Web Application</p>
                             </div>
-                            <i class="fa-solid fa-star star-icon"></i>
+                            <!-- <i class="fa-solid fa-star star-icon"></i> -->
                         </div>
                         <div class="card-body">
                             <span class="status completed">COMPLETED</span>
@@ -462,7 +497,7 @@
                                 <h5>To Do Application</h5>
                                 <p>Web Application</p>
                             </div>
-                            <i class="fa-solid fa-star star-icon"></i>
+                            <!-- <i class="fa-solid fa-star star-icon"></i> -->
                         </div>
                         <div class="card-body">
                             <span class="status completed">COMPLETED</span>
@@ -491,7 +526,7 @@
                                 <h5>KTU Website 2.0</h5>
                                 <p>Web Application</p>
                             </div>
-                            <i class="fa-solid fa-star star-icon"></i>
+                            <!-- <i class="fa-solid fa-star star-icon"></i> -->
                         </div>
                         <div class="card-body">
                             <span class="status completed">COMPLETED</span>
@@ -517,7 +552,7 @@
                                 <h5>Task Manager Application</h5>
                                 <p>Web Application</p>
                             </div>
-                            <i class="fa-solid fa-star star-icon"></i>
+                            <!-- <i class="fa-solid fa-star star-icon"></i> -->
                         </div>
                         <div class="card-body">
                             <span class="status completed">COMPLETED</span>
@@ -545,7 +580,7 @@
                                 <h5>E-commerce Website</h5>
                                 <p>Web Application</p>
                             </div>
-                            <i class="fa-solid fa-star star-icon"></i>
+                            <!-- <i class="fa-solid fa-star star-icon"></i> -->
                         </div>
                         <div class="card-body">
                             <span class="status completed">IN PROGRESS</span>
@@ -618,7 +653,7 @@
             </div>
 
             <!-- Package 2 -->
-          
+   
             <!-- Additional Packages can be added similarly -->
         </div><!-- End of Pricing Wrapper -->
     </div> <!-- End of Container -->
@@ -644,33 +679,31 @@
 
     <!-- testimonial section -->
 
-    <!-- contact section -->
-   
+   <section class="section" id="contact">
+       <div class="container text-center">
+           <p class="section-subtitle">How can you communicate?</p>
+           <h6 class="section-title mb-5">Contact Me</h6>
+           <!-- contact form -->
+           <form id="contact-form" class="contact-form col-md-10 col-lg-8 m-auto">
+               <input type="hidden" name="contact_number" value="697483">
+               <div class="form-row">
+                   <div class="form-group col-sm-6">
+                       <input type="text" name="user_name" size="50" class="form-control" placeholder="Your Name" required>
+                   </div>
+                   <div class="form-group col-sm-6">
+                       <input type="email" name="user_email" class="form-control" placeholder="Enter Email" required>
+                   </div>
+                   <div class="form-group col-sm-12">
+                       <textarea name="message" id="comment" rows="6" class="form-control" placeholder="Write Something"></textarea>
+                   </div>
+                   <div class="form-group col-sm-12 mt-3">
+                       <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                   </div>
+               </div>
+           </form><!-- end of contact form -->
+       </div><!-- end of container -->
+   </section><!-- end of contact section -->
     
-    <section class="section" id="contact">
-        <div class="container text-center">
-            <p class="section-subtitle">How can you communicate?</p>
-            <h6 class="section-title mb-5">Contact Me</h6>
-            <!-- contact form -->
-            <form id="contact-form" class="contact-form col-md-10 col-lg-8 m-auto">
-                <input type="hidden" name="contact_number" value="697483">
-                <div class="form-row">
-                    <div class="form-group col-sm-6">
-                        <input type="text" name="user_name" size="50" class="form-control" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group col-sm-6">
-                        <input type="email" name="user_email" class="form-control" placeholder="Enter Email" required>
-                    </div>
-                    <div class="form-group col-sm-12">
-                        <textarea name="message" id="comment" rows="6" class="form-control" placeholder="Write Something"></textarea>
-                    </div>
-                    <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
-                    </div>
-                </div>
-            </form><!-- end of contact form -->
-        </div><!-- end of container -->
-    </section><!-- end of contact section -->
     
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
@@ -715,6 +748,7 @@
 
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
+    <script src="assets/js/animation.js"></script>
 
 </body>
 
