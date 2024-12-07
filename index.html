@@ -7,7 +7,7 @@
     <meta name="description" content="Start your development with Meyawo landing page.">
     <meta name="author" content="Devcrud">
     <title>Amal Saji</title>
-    <link rel="icon" type="image/x-icon" href="assets\imgs\profile.png">
+    <link rel="icon" type="image/x-icon" href="assets\imgs\logo.jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <style>
         body.dark {
-            background-color: hsl(240 10% 3.9%);
+            background-color: hsl(0deg 0% 0.39%);
             color: white;
         }
         
@@ -54,7 +54,7 @@
 
         
         body.dark .header {
-            background-image: none;
+            background-image: url(assets/imgs/dark.jpg);
             color: white;
         }
         
@@ -75,6 +75,10 @@
             background-color: rgb(24 24 27) !important;
             color: #121212;
         }
+
+
+
+
 
 /* Apply styles only below 600px */
 @media (max-width: 600px) {
@@ -106,6 +110,8 @@ body.dark .white-filter {
     </style>
     <!-- Bootstrap + Meyawo main styles -->
     <link rel="stylesheet" href="assets/css/meyawo.css">
+    <link rel="stylesheet" href="assets/css/notification.css">
+    <link rel="stylesheet" href="assets/css/timeline.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/particle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -214,11 +220,14 @@ body.dark .white-filter {
     <!-- about section -->
     <section class="section pt-0" id="about">
         <!-- container -->
-        <div class="container text-center ">
+        <div class="container  text-center ">
+            <div class="light">
+                
+            </div>
             <!-- about wrapper -->
             <div class="about">
                 <div class="about-img-holder">
-                    <img src="assets/imgs/profile.png" class="about-img"
+                    <img src="assets/imgs/amal.jpeg" class="about-img"
                         alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                 </div>
                 <div class="about-caption">
@@ -626,7 +635,54 @@ body.dark .white-filter {
         </div><!-- end of container -->
     </section> <!-- end of portfolio section -->
     
-    
+    <!-- <section id="work-experience">
+        <div class="container text-center">
+
+            <p class="section-subtitle">What I Did?</p>
+            <h6 class="section-title mb-6">Projects</h6>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-date">2024 - Present</div>
+                <div class="timeline-content">
+                  <h3>Full Stack Developer (Intern)</h3>
+                  <p>Company: XYZ Tech Solutions</p>
+                  <ul>
+                    <li>Developed and maintained APIs using Node.js and PostgreSQL.</li>
+                    <li>Created responsive user interfaces using React.js and Bootstrap.</li>
+                    <li>Collaborated with the team on implementing new features and debugging issues.</li>
+                  </ul>
+                </div>
+              </div>
+          
+              <div class="timeline-item">
+                <div class="timeline-date">2023 - 2024</div>
+                <div class="timeline-content">
+                  <h3>Junior Developer</h3>
+                  <p>Company: ABC Web Solutions</p>
+                  <ul>
+                    <li>Worked on backend systems using Node.js, Express, and MongoDB.</li>
+                    <li>Participated in front-end development with React.js and JavaScript.</li>
+                    <li>Assisted in integrating third-party APIs and external services.</li>
+                  </ul>
+                </div>
+              </div>
+          
+              <div class="timeline-item">
+                <div class="timeline-date">2022 - 2023</div>
+                <div class="timeline-content">
+                  <h3>Intern</h3>
+                  <p>Company: DEF Digital Agency</p>
+                  <ul>
+                    <li>Assisted in developing client websites using HTML, CSS, and JavaScript.</li>
+                    <li>Performed testing and troubleshooting of front-end and back-end applications.</li>
+                    <li>Contributed to the team with new ideas for improving UI/UX design.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section> -->
+      
   <!-- Package Section -->
 <section class="section" id="packages">
     <div class="container text-center">
@@ -699,6 +755,7 @@ body.dark .white-filter {
                    <div class="form-group col-sm-12 mt-3">
                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
                    </div>
+<div id="toast" class="toast">Message Sent Successfully!</div>
                </div>
            </form><!-- end of contact form -->
        </div><!-- end of container -->
@@ -719,12 +776,8 @@ body.dark .white-filter {
           const form = this;
           try {
             // Send the form data using EmailJS
-            await emailjs.sendForm('service_6jwnusv', 'template_yu1p8vc', form);
-            
-            // Show success notification
-            alert('Message sent successfully!');
-            
-            // Optionally, clear the form after submission
+            await emailjs.sendForm('service_6jwnusv', 'template_yu1p8vc', form);        
+            showToast()
             form.reset();
           } catch (error) {
             console.error(error);
@@ -749,6 +802,7 @@ body.dark .white-filter {
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
     <script src="assets/js/animation.js"></script>
+    <script src="assets/js/notification.js"></script>
 
 </body>
 

@@ -13026,6 +13026,7 @@ pre .code {
 .about-img-holder .about-img {
   width: 100%;
   margin-bottom: 15px;
+  border-radius: 50%;
 }
 
 .about-caption {

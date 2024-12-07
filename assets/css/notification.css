@@ -1,0 +1,24 @@
+/* styles.css */
+.toast {
+    visibility: hidden; /* Hidden by default */
+    min-width: 250px; /* Minimum width of the toast */
+    margin-left: -125px; /* Center the toast */
+    background-color: #4CAF50; /* Green background for success */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    border-radius: 2px; /* Rounded corners */
+    padding: 16px; /* Padding */
+    position: fixed; /* Fixed position */
+    z-index: 1; /* Ensure it's on top */
+    right: 30px; /* Position the toast 30px from the right */
+    bottom: 30px; /* Position the toast 30px from the bottom */
+    font-size: 17px; /* Font size */
+    opacity: 0; /* Start with hidden opacity */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+  }
+  
+  .toast.show {
+    visibility: visible;
+    opacity: 1; /* Show toast */
+  }
+  
