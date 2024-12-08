@@ -1,0 +1,90 @@
+
+body.dark {
+    background-color: hsl(0deg 0% 0.39%);
+    color: white;
+}
+
+body.dark .section-subtitle,
+body.dark .para,
+body.dark .pricing-card h5,
+body.dark .pricing-card p,
+body.dark .pricing-card li,
+body.dark .project-info h5,
+body.dark .project-info p,
+body.dark .description,
+body.dark .header .header-content .header-title .up,
+body.dark .header .header-content .header-title .down,
+body.dark .header .header-content .header-subtitle,
+body.dark #service .service-card p,
+body.dark .links i,body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h6 ,body.dark .custom-navbar.affix .logo{
+    color: white;
+} 
+
+body.dark .portfolio-card,
+body.dark .pricing-card,
+body.dark #service .service-card,
+body.dark .skill-btn,
+body.dark .custom-navbar.affix{
+    background-color: rgb(24 24 27);
+    color:white;
+}
+
+body.dark .icon-img {
+    background-color: rgb(75 85 99);
+}
+
+
+body.dark .header {
+    background-image: url(../imgs/dark.jpg);
+    color: white;
+}
+
+body.dark .header .overlay {
+    background-image: none;
+}
+body.dark .pricing-card-header {
+    background: linear-gradient(135deg, #695aa6, #4b437b);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+
+}
+body.dark .pricing-card-btn ,body.dark .btn-outline-primary ,body.dark .btn-light{
+    background-color: #695aa6 !important;
+    color: white;
+    border: none !important;
+}
+body.dark .bg-primary {
+    background-color: rgb(24 24 27) !important;
+    color: #121212;
+}
+
+
+
+
+
+/* Apply styles only below 600px */
+@media (max-width: 600px) {
+body.dark .custom-navbar .nav {
+background-color: rgb(24 24 27);
+color: white !important;
+}
+body.dark .custom-navbar .custom-navbar .nav .item .link:hover{
+color: white !important;
+}
+}
+
+
+/* Default Style */
+.white-filter {
+color: black; /* Default color is black */
+filter: none; /* No filter applied by default */
+}
+
+/* Dark Mode Style */
+body.dark .white-filter {
+color: #fff; /* In dark mode, set the text color to white */
+filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(0deg); /* Apply a filter for color manipulation */
+}

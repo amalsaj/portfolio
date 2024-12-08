@@ -4,116 +4,23 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Meyawo landing page.">
-    <meta name="author" content="Devcrud">
+    <meta name="description" content="Explore Amal Saji's dynamic portfolio – a Full Stack Developer creating innovative web applications with cutting-edge technologies. Check out projects, skills, and more!">
+    <meta name="author" content="Amal Saji">
     <title>Amal Saji</title>
     <link rel="icon" type="image/x-icon" href="assets\imgs\logo.jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <style>
-        body.dark {
-            background-color: hsl(0deg 0% 0.39%);
-            color: white;
-        }
-        
-        body.dark .section-subtitle,
-        body.dark .para,
-        body.dark .pricing-card h5,
-        body.dark .pricing-card p,
-        body.dark .pricing-card li,
-        body.dark .project-info h5,
-        body.dark .project-info p,
-        body.dark .description,
-        body.dark .header .header-content .header-title .up,
-        body.dark .header .header-content .header-title .down,
-        body.dark .header .header-content .header-subtitle,
-        body.dark #service .service-card p,
-        body.dark .links i,body.dark h1,
-        body.dark h2,
-        body.dark h3,
-        body.dark h4,
-        body.dark h6 ,body.dark .custom-navbar.affix .logo{
-            color: white;
-        } 
-        
-        body.dark .portfolio-card,
-        body.dark .pricing-card,
-        body.dark #service .service-card,
-        body.dark .skill-btn,
-        body.dark .custom-navbar.affix{
-            background-color: rgb(24 24 27);
-            color:white;
-        }
-        
-        body.dark .icon-img {
-            background-color: rgb(75 85 99);
-        }
-
-        
-        body.dark .header {
-            background-image: url(assets/imgs/dark.jpg);
-            color: white;
-        }
-        
-        body.dark .header .overlay {
-            background-image: none;
-        }
-        body.dark .pricing-card-header {
-            background: linear-gradient(135deg, #695aa6, #4b437b);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-
-        }
-        body.dark .pricing-card-btn ,body.dark .btn-outline-primary ,body.dark .btn-light{
-            background-color: #695aa6 !important;
-            color: white;
-            border: none !important;
-        }
-        body.dark .bg-primary {
-            background-color: rgb(24 24 27) !important;
-            color: #121212;
-        }
-
-
-
-
-
-/* Apply styles only below 600px */
-@media (max-width: 600px) {
-    body.dark .custom-navbar .nav {
-        background-color: rgb(24 24 27);
-        color: white !important;
-    }
-    body.dark .custom-navbar .custom-navbar .nav .item .link:hover{
-        color: white !important;
-    }
-}
-
-
-      /* Default Style */
-.white-filter {
-  color: black; /* Default color is black */
-  filter: none; /* No filter applied by default */
-}
-
-/* Dark Mode Style */
-body.dark .white-filter {
-  color: #fff; /* In dark mode, set the text color to white */
-  filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(0deg); /* Apply a filter for color manipulation */
-}
-
-        
-
-        
-    </style>
-    <!-- Bootstrap + Meyawo main styles -->
-    <link rel="stylesheet" href="assets/css/meyawo.css">
+     
+    <!--main styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/notification.css">
     <link rel="stylesheet" href="assets/css/timeline.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/particle.css">
+    <link rel="stylesheet" href="assets/css/orbit.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Handlee&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -121,8 +28,7 @@ body.dark .white-filter {
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <!-- Page Navbar -->
-    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">       
-          
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">               
         <div class="container">
             <a class="logo" href="#">Portfolio</a>
             <ul class="nav">
@@ -162,7 +68,6 @@ body.dark .white-filter {
 
     <!-- page header -->
     <header id="home" class="header">
-        <div class="overlay"></div>
         <div class="header-content container">
             <h1 class="header-title">
                 <span class="up">HI!</span>
@@ -172,59 +77,15 @@ body.dark .white-filter {
 
             <a href="https://github.com/amalsaj" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 Visit My Works
-              </a>
-             
-              
+              </a>             
         </div>
     </header><!-- end of page header -->
 
 <div>
 
-    <script>
-        // Initialize theme based on local storage
-        document.addEventListener('DOMContentLoaded', () => {
-            const storedTheme = localStorage.getItem('theme') || 'light';
-            const body = document.body;
-            const moonIcon = document.getElementById('moonIcon');
-            const sunIcon = document.getElementById('sunIcon');
-
-            if (storedTheme === 'dark') {
-                body.classList.add('dark');
-                moonIcon.classList.remove('visible');
-                sunIcon.classList.add('visible');
-            } else {
-                body.classList.remove('dark');
-                moonIcon.classList.add('visible');
-                sunIcon.classList.remove('visible');
-            }
-        });
-
-        function myFunction() {
-            let body = document.body;
-            const moonIcon = document.getElementById('moonIcon');
-            const sunIcon = document.getElementById('sunIcon');
-
-            // Toggle the dark class
-            body.classList.toggle('dark');
-
-            // Toggle icon visibility
-            moonIcon.classList.toggle('visible');
-            sunIcon.classList.toggle('visible');
-
-            // Store the current theme in local storage
-            const currentTheme = body.classList.contains('dark') ? 'dark' : 'light';
-            localStorage.setItem('theme', currentTheme);
-        }
-    </script>
-
     <!-- about section -->
     <section class="section pt-0" id="about">
-        <!-- container -->
         <div class="container  text-center ">
-            <div class="light">
-                
-            </div>
-            <!-- about wrapper -->
             <div class="about">
                 <div class="about-img-holder">
                     <img src="assets/imgs/amal.jpeg" class="about-img"
@@ -237,21 +98,11 @@ body.dark .white-filter {
                         Hi, I’m Amal Saji, a full stack developer with skills in JavaScript, Python, Go, React.js, Node.js, and database management with MongoDB and PostgreSQL. I also have experience in React Native for mobile application development. I specialize in both frontend and backend development, enabling me to build complete and efficient applications. My strong problem-solving abilities help me tackle challenges effectively, and I’m always eager to learn new technologies and improve my skills. Being fluent in Malayalam, English, Hindi, and Tamil allows me to communicate effectively with diverse teams and clients. My goal is to continue growing as a developer and contribute to creating innovative web and mobile applications that provide great user experiences.
                     </p>
                     <button class="btn-rounded btn btn-outline-primary downloadCvButton" id="downloadCvButton">Download CV</button>
-                    <script>
-                        document.getElementById('downloadCvButton').addEventListener('click', function() {
-                            const link = document.createElement('a');
-                            link.href = 'assets/file/amal-resume.pdf'; 
-                            link.download = 'amal-resume.pdf'; 
-                            document.body.appendChild(link);
-                            link.click();
-                            document.body.removeChild(link);
-                        });
-                        </script>
                 </div>
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
     </section> <!-- end of about section -->
-    <!-- <div id="particle-container"></div> -->
+
 
 <!-- Services Section -->
 <section id="service" class="section">
@@ -288,11 +139,13 @@ body.dark .white-filter {
     </div>
 </section> <!-- end of services section -->
 
+<!-- orbit -->
 <div class="container-particle">
     <div class="wrap">
-      <!-- Particles dynamically generated in JavaScript -->
     </div>
   </div>
+
+<!-- skills section -->
 <section class="section" id="skills">
     <div class="container text-center">
         <p class="section-subtitle">What I Specialize In?</p>
@@ -373,14 +226,14 @@ body.dark .white-filter {
 </section>
 
 
-    <!-- portfolio section -->
-    <section class="section" id="portfolio">
+<!-- projects section -->
+<section class="section" id="portfolio">
         <div class="container text-center">
             <p class="section-subtitle">What I Did?</p>
             <h6 class="section-title mb-6">Projects</h6>
             <div class="portfolio-wrapper">
-                <!-- Portfolio Item 1 -->
-              
+
+                <!-- Portfolio Item 1 -->             
                     <div class="portfolio-card">
                         <div class="card-header">
                             <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
@@ -407,8 +260,7 @@ body.dark .white-filter {
                         </div>
                     </div>
     
-                <!-- Portfolio Item 2 -->
-              
+                <!-- Portfolio Item 2 -->            
                     <div class="portfolio-card">
                         <div class="card-header">
                             <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
@@ -438,8 +290,7 @@ body.dark .white-filter {
                     </div>
           
     
-                <!-- Portfolio Item 3 -->
-              
+                <!-- Portfolio Item 3 -->             
                     <div class="portfolio-card">
                         <div class="card-header">
                             <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
@@ -468,8 +319,8 @@ body.dark .white-filter {
                             </div>
                         </div>
                     </div>
-                <!-- Portfolio Item 4 -->
-          
+
+                <!-- Portfolio Item 4 -->       
                     <div class="portfolio-card">
                         <div class="card-header">
                             <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
@@ -498,7 +349,7 @@ body.dark .white-filter {
                         </div>
                     </div>
 
-             <!-- Portfolio Item 6 -->
+             <!-- Portfolio Item 5 -->
                     <div class="portfolio-card">
                         <div class="card-header">
                             <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
@@ -528,6 +379,7 @@ body.dark .white-filter {
                         </div>
                     </div>
 
+                 <!-- Portfolio Item 6 -->
                     <div class="portfolio-card">
                         <div class="card-header">
                             <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
@@ -535,7 +387,6 @@ body.dark .white-filter {
                                 <h5>KTU Website 2.0</h5>
                                 <p>Web Application</p>
                             </div>
-                            <!-- <i class="fa-solid fa-star star-icon"></i> -->
                         </div>
                         <div class="card-body">
                             <span class="status completed">COMPLETED</span>
@@ -554,6 +405,7 @@ body.dark .white-filter {
                             </div>
                         </div>
                     </div>
+                      <!-- Portfolio Item 7 -->
                     <div class="portfolio-card">
                         <div class="card-header">
                             <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
@@ -561,7 +413,6 @@ body.dark .white-filter {
                                 <h5>Task Manager Application</h5>
                                 <p>Web Application</p>
                             </div>
-                            <!-- <i class="fa-solid fa-star star-icon"></i> -->
                         </div>
                         <div class="card-body">
                             <span class="status completed">COMPLETED</span>
@@ -581,7 +432,7 @@ body.dark .white-filter {
                         </div>
                     </div>
 
-                    
+                      <!-- Portfolio Item 8 -->
                     <div class="portfolio-card">
                         <div class="card-header">
                             <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
@@ -589,7 +440,6 @@ body.dark .white-filter {
                                 <h5>E-commerce Website</h5>
                                 <p>Web Application</p>
                             </div>
-                            <!-- <i class="fa-solid fa-star star-icon"></i> -->
                         </div>
                         <div class="card-body">
                             <span class="status completed">IN PROGRESS</span>
@@ -610,83 +460,15 @@ body.dark .white-filter {
                             </div>
                         </div>
                     </div>
-
-                <script>
-                    function openUrl(elementId, url) {
-                        document.getElementById(elementId).addEventListener('click', function() {
-                            window.open(url, '_blank');
-                        });
-                    }   
-                    openUrl('githubFlood', 'https://github.com/amalsaj/Flood-Prediction-using-Machine-Learning');
-                    openUrl('githubEmp', 'https://github.com/amalsaj/EmployeeClient');
-                    openUrl('githubNetflix', 'https://github.com/amalsaj/netflixClone2.0');
-                    openUrl('githubMusic', 'https://github.com/amalsaj/personalizedMusicClient');
-                    openUrl('githubKtu', 'https://github.com/amalsaj/KTU-website-redesign-using-React');
-                    openUrl('githubToDo', 'https://github.com/amalsaj/todoClient');
-                    openUrl('githubManage', 'https://github.com/amalsaj/taskManagerClient');
-                    openUrl('githubE', 'https://github.com/amalsaj/e-ecommerce');
-                    openUrl('deployEmp', 'https://employee-client-three.vercel.app/');
-                    openUrl('deployNetflix', 'https://netflix-clone2-0-xi.vercel.app/');
-                    openUrl('deployToDo', 'https://todo-client-mu-rosy.vercel.app/');
-                    openUrl('deployManage', 'https://task-manager-client-lake.vercel.app/');
-                    openUrl('deployMusic', 'https://personalized-music-client.vercel.app/');
-                </script>
             </div><!-- end of row -->
         </div><!-- end of container -->
     </section> <!-- end of portfolio section -->
     
-    <!-- <section id="work-experience">
-        <div class="container text-center">
-
-            <p class="section-subtitle">What I Did?</p>
-            <h6 class="section-title mb-6">Projects</h6>
-            <div class="timeline">
-              <div class="timeline-item">
-                <div class="timeline-date">2024 - Present</div>
-                <div class="timeline-content">
-                  <h3>Full Stack Developer (Intern)</h3>
-                  <p>Company: XYZ Tech Solutions</p>
-                  <ul>
-                    <li>Developed and maintained APIs using Node.js and PostgreSQL.</li>
-                    <li>Created responsive user interfaces using React.js and Bootstrap.</li>
-                    <li>Collaborated with the team on implementing new features and debugging issues.</li>
-                  </ul>
-                </div>
-              </div>
-          
-              <div class="timeline-item">
-                <div class="timeline-date">2023 - 2024</div>
-                <div class="timeline-content">
-                  <h3>Junior Developer</h3>
-                  <p>Company: ABC Web Solutions</p>
-                  <ul>
-                    <li>Worked on backend systems using Node.js, Express, and MongoDB.</li>
-                    <li>Participated in front-end development with React.js and JavaScript.</li>
-                    <li>Assisted in integrating third-party APIs and external services.</li>
-                  </ul>
-                </div>
-              </div>
-          
-              <div class="timeline-item">
-                <div class="timeline-date">2022 - 2023</div>
-                <div class="timeline-content">
-                  <h3>Intern</h3>
-                  <p>Company: DEF Digital Agency</p>
-                  <ul>
-                    <li>Assisted in developing client websites using HTML, CSS, and JavaScript.</li>
-                    <li>Performed testing and troubleshooting of front-end and back-end applications.</li>
-                    <li>Contributed to the team with new ideas for improving UI/UX design.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-        </div>
-      </section> -->
       
   <!-- Package Section -->
 <section class="section" id="packages">
     <div class="container text-center">
-        <p class="section-subtitle">Explore My npm Packages</p>
+        <p class="section-subtitle">What Are My Packages?</p>
         <h2 class="section-title mb-6">Package Details</h2>
         <!-- Row -->
         <div class="pricing-wrapper">
@@ -707,18 +489,13 @@ body.dark .white-filter {
                     </div>
                 </div>
             </div>
-
-            <!-- Package 2 -->
-   
-            <!-- Additional Packages can be added similarly -->
         </div><!-- End of Pricing Wrapper -->
     </div> <!-- End of Container -->
 </section><!-- End of Packages Section -->
 
 
-    <!-- section -->
+    <!-- hire me section -->
     <section class="section-sm bg-primary hire-me">
-        <!-- container -->
         <div class="container text-center text-sm-left">
             <!-- row -->
             <div class="row align-items-center">
@@ -733,8 +510,7 @@ body.dark .white-filter {
         </div> <!-- end of container -->
     </section> <!-- end of section -->
 
-    <!-- testimonial section -->
-
+<!-- contact section -->
    <section class="section" id="contact">
        <div class="container text-center">
            <p class="section-subtitle">How can you communicate?</p>
@@ -760,49 +536,15 @@ body.dark .white-filter {
            </form><!-- end of contact form -->
        </div><!-- end of container -->
    </section><!-- end of contact section -->
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script>
-        (function () {
-          emailjs.init('geA5hSP0NM2qnnlRp');
-        })();
-      </script>
-      
-      <script>
-        document.getElementById('contact-form').addEventListener('submit', async function(event) {
-          event.preventDefault();
-          
-          const form = this;
-          try {
-            // Send the form data using EmailJS
-            await emailjs.sendForm('service_6jwnusv', 'template_yu1p8vc', form);        
-            showToast()
-            form.reset();
-          } catch (error) {
-            console.error(error);
-            // Show error notification
-            alert('Something went wrong. Please try again later.');
-          }
-        });
-      </script>      
-    
-    
-
-    <!-- footer -->
-    <!-- end of page footer -->
-
-    <!-- core  -->
+ 
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap 3 affix -->
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- Meyawo js -->
-    <script src="assets/js/meyawo.js"></script>
-    <script src="assets/js/animation.js"></script>
-    <script src="assets/js/notification.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/orbit.js"></script>
+    <script src="assets/js/dark.js"></script>
+    <script src="assets/js/common.js"></script>
 
 </body>
 
