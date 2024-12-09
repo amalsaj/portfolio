@@ -73,7 +73,7 @@ section {
 
 body {
   margin: 0;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -12130,8 +12130,8 @@ p {
 }
 
 .downloadCvButton {
-  background-color: #695aa6;
-  color: #fff;
+  color: #695aa6;
+  border-color: #695aa6;
   padding: 10px 20px;
   border-radius: 10px;
   text-decoration: none;

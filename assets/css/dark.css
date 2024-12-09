@@ -20,7 +20,7 @@ body.dark .links i,body.dark h1,
 body.dark h2,
 body.dark h3,
 body.dark h4,
-body.dark h6 ,body.dark .custom-navbar.affix .logo{
+body.dark h6 ,body.dark .custom-navbar.affix .logo,body.dark .laptop-body h5{
     color: white;
 } 
 
@@ -60,9 +60,10 @@ body.dark .bg-primary {
     background-color: rgb(24 24 27) !important;
     color: #121212;
 }
-
-
-
+body.dark .laptop {
+    background-color: rgb(24 24 27) !important;
+    color: #121212;
+}
 
 
 /* Apply styles only below 600px */

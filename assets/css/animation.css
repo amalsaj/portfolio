@@ -1,0 +1,214 @@
+/* Projects Container */
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Default single column layout */
+    gap: 2rem; /* Space between cards */
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 1200px; /* Centralize the container */
+}
+
+/* Individual Card */
+.laptop {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* Two-column structure for larger screens */
+    align-items: center;
+    gap: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+    transition: transform 0.3s ease;
+    padding: 1.5rem; /* Added padding inside each card */
+}
+
+.laptop:hover {
+    transform: translateY(-5px); /* Hover effect to elevate the card */
+}
+
+/* Image Styling */
+.laptop-img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 400px;
+}
+
+/* Body Styling */
+.laptop-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+/* Title */
+.laptop-body h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+/* Description */
+.description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+/* Case Study Button */
+.case-study-btn {
+    background-color: #6a5af9;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: max-content;
+    align-self: flex-start; /* Align button to the left */
+}
+
+.case-study-btn:hover {
+    background-color: #5548c8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr; /* Still one column on small screens */
+    }
+
+    .laptop {
+        grid-template-columns: 1fr; /* Stack image and content on smaller screens */
+        padding: 1rem; /* Reduce padding for smaller screens */
+    }
+
+    .laptop-img {
+        margin-bottom: 1rem; /* Space between image and content */
+    }
+
+    .laptop-body {
+        align-items: center;
+    }
+    .text-project{
+        text-align: center;
+    }
+
+    .laptop-body h5 {
+        font-size: 1.3rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .case-study-btn {
+        width: 100%; /* Make button full-width on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-container {
+        padding: 1rem;
+    }
+
+    .laptop {
+        padding: 0.8rem; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .laptop-img {
+        height: 350px; /* Adjust the height on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .laptop-img {
+        height: 180px; /* Further reduce height on small screens */
+    }
+}
+
+.buttons-project {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    color: white;
+    text-align: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 10px; /* Ensures spacing between buttons */
+}
+
+.github-btn {
+    background-color: #333;
+    margin-bottom: 0; /* Maintain spacing consistency */
+}
+
+.live-btn {
+    background-color: #695aa6;
+}
+
+.fa-github,
+.fa-globe {
+    margin-right: 8px; /* Adjust icon spacing for better balance */
+}
+
+/* Adjust the layout for tablets and small screens */
+@media (max-width: 768px) {
+    .buttons-project {
+        width: 100%; /* Full width container */
+        padding: 10px;
+        font-size: 14px; /* Slightly reduce font size */
+        gap: 12px; /* Add more spacing between buttons */
+    }
+
+    .link-icon{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     gap: 5px;
+    }
+
+    .github-btn,
+    .live-btn {
+        width: 100%; /* Buttons span the full width */
+        max-width: 300px; /* Add a maximum width for visual balance */
+        margin: 0 auto; /* Center-align buttons */
+        padding: 10px 16px;
+    }
+
+    .fa-github,
+    .fa-globe {
+        margin-right: 5px; /* Adjust spacing for icons */
+    }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+    .buttons-project {
+     flex-direction: row;
+    }
+
+    .github-btn,
+    .live-btn {
+        font-size: 12px; /* Reduce font size for very small screens */
+        padding: 8px 12px;
+    }
+
+    .fa-github,
+    .fa-globe {
+        margin-right: 4px; /* Reduce icon spacing */
+    }
+}

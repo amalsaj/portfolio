@@ -68,6 +68,7 @@
 
     <!-- page header -->
     <header id="home" class="header">
+        <div class="overlay"></div>
         <div class="header-content container">
             <h1 class="header-title">
                 <span class="up">HI!</span>
@@ -95,8 +96,11 @@
                     <p class="section-subtitle">Who Am I ?</p>
                     <h2 class="section-title mb-3">About Me</h2>
                     <p class="para">
-                        Hi, I’m Amal Saji, a full stack developer with skills in JavaScript, Python, Go, React.js, Node.js, and database management with MongoDB and PostgreSQL. I also have experience in React Native for mobile application development. I specialize in both frontend and backend development, enabling me to build complete and efficient applications. My strong problem-solving abilities help me tackle challenges effectively, and I’m always eager to learn new technologies and improve my skills. Being fluent in Malayalam, English, Hindi, and Tamil allows me to communicate effectively with diverse teams and clients. My goal is to continue growing as a developer and contribute to creating innovative web and mobile applications that provide great user experiences.
+                        Hi, I’m Amal Saji, a full stack developer skilled in JavaScript, Python, Go, React.js, Node.js, and database management with MongoDB and PostgreSQL. I also have experience in React Native for mobile application development, allowing me to build complete and efficient applications for both web and mobile platforms.  
+                       <br>
+                        My strong problem-solving skills help me tackle challenges effectively, and I’m eager to learn new technologies and enhance my abilities. Fluent in Malayalam, English, Hindi, and Tamil, I communicate well with diverse teams and clients. My goal is to grow as a developer and contribute to creating innovative applications with excellent user experiences.
                     </p>
+                    
                     <button class="btn-rounded btn btn-outline-primary downloadCvButton" id="downloadCvButton">Download CV</button>
                 </div>
             </div><!-- end of about wrapper -->
@@ -227,244 +231,138 @@
 
 
 <!-- projects section -->
-<section class="section" id="portfolio">
-        <div class="container text-center">
+
+    
+      <section class="section" id="portfolio">
+        <div class=" container text-center">
             <p class="section-subtitle">What I Did?</p>
             <h6 class="section-title mb-6">Projects</h6>
-            <div class="portfolio-wrapper">
-
-                <!-- Portfolio Item 1 -->             
-                    <div class="portfolio-card">
-                        <div class="card-header">
-                            <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
-                            <div class="project-info">
-                                <h5>Netflix Clone 2.0</h5>
-                                <p>Web Application</p>
-                            </div>
-                            <!-- <i class="fa-solid fa-star star-icon"></i> -->
+              <div class="projects-container">
+                  <div class="laptop">
+                      <img class="laptop-img" src="assets/imgs/project1.png" alt="Package Icon">
+                      <div class="laptop-body">
+                          <h5>Netflix Clone 2.0</h5>         
+                          <p class="description text-project">A Netflix clone in React with user authentication, movie browsing, trailer watching, and full responsiveness.</p>
+                          <div class="link-icon">
+                            <button class="buttons-project github-btn" id="githubNetflix">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </button>
+                            <button class="buttons-project live-btn" id="deployNetflix">
+                                <i class="fa-solid fa-globe"></i> Live Demo
+                            </button>
                         </div>
-                        <div class="card-body">
-                            <span class="status completed">COMPLETED</span>
-                            <p class="description">A Netflix clone in React with user authentication, movie browsing, trailer watching, and full responsiveness.</p>
-                            <div class="technologies">
-                                <i class="devicon-react-original-wordmark colored"></i>
-                                <i class="devicon-javascript-plain colored"></i>                           
-                                <i class="devicon-axios-plain-wordmark colored"></i>
-                            </div>
+                      </div>
+                  </div>
+                  <div class="laptop">
+                      <img class="laptop-img" src="assets/imgs/project4.png" alt="Package Icon">
+                      <div class="laptop-body">
+                          <h5>Personalized Music App</h5>
+                          <p class="description text-project">A music streaming app that curates personalized playlists based on your mood and preferences.</p>
+                          <div class="link-icon">
+                            <button class="buttons-project github-btn" id="githubMusic">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </button>
+                            <button class="buttons-project live-btn" id="deployMusic">
+                                <i class="fa-solid fa-globe"></i> Live Demo
+                            </button>
                         </div>
-                        <div class="card-footer">
-                            <div class="links">
-                                <i class="fa-brands fa-github m-1 iconHover" id="githubNetflix"></i>
-                                <i class="fa-solid fa-arrow-up-right-from-square iconHover" id="deployNetflix"></i>
-                            </div>
+                      </div>
+                  </div>
+                  <div class="laptop">
+                      <img class="laptop-img" src="assets/imgs/project3.png" alt="Package Icon">
+                      <div class="laptop-body">
+                          <h5>Employee Management System</h5>
+                          <p class="description text-project">An Employee Management System with authentication, a dashboard, and features like search, pagination, real-time notifications, and responsive design.</p>
+                          <div class="link-icon">
+                            <button class="buttons-project github-btn" id="githubEmp">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </button>
+                            <button class="buttons-project live-btn" id="deployEmp">
+                                <i class="fa-solid fa-globe"></i> Live Demo
+                            </button>
                         </div>
-                    </div>
-    
-                <!-- Portfolio Item 2 -->            
-                    <div class="portfolio-card">
-                        <div class="card-header">
-                            <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
-                            <div class="project-info">
-                                <h5>Employee Management System</h5>
-                                <p>Web Application</p>
-                            </div>
-                            <!-- <i class="fa-solid fa-star star-icon"></i> -->
+                      </div>
+                  </div>
+                  <div class="laptop">
+                      <img class="laptop-img" src="assets/imgs/project8.png" alt="Package Icon">
+                      <div class="laptop-body">
+                          <h5>Flood Prediction Using Machine Learning</h5>
+                          <p class="description text-project">Our project focuses on predicting floods in various regions and sending alert messages to registered users.</p>
+                          <div class="link-icon">
+                            <button class="buttons-project github-btn" id="githubFlood">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </button>
+                            <button class="buttons-project live-btn" disabled>
+                                <i class="fa-solid fa-globe"></i> Live Demo
+                            </button>
                         </div>
-                        <div class="card-body">
-                            <span class="status completed">COMPLETED</span>
-                            <p class="description">An Employee Management System with authentication, a dashboard, and features like search, pagination, real-time notifications, and responsive design.</p>
-                            <div class="technologies">
-                                <i class="devicon-react-original-wordmark colored"></i>
-                                <i class="devicon-javascript-plain colored"></i>                           
-                                <i class="devicon-axios-plain-wordmark colored"></i>
-                                <i class="devicon-express-original-wordmark"></i>
-                                <i class="devicon-mongodb-plain-wordmark colored"></i>
-                            </div>
+                      </div>
+                  </div>
+                  <div class="laptop">
+                      <img class="laptop-img" src="assets/imgs/project5.png" alt="Package Icon">
+                      <div class="laptop-body">
+                          <h5>To Do Application</h5>
+                          <p class="description text-project">A To-Do application helps users keep track of and manage their tasks.</p>
+                          <div class="link-icon">
+                            <button class="buttons-project github-btn" id="githubToDo">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </button>
+                            <button class="buttons-project live-btn" id="deployToDo">
+                                <i class="fa-solid fa-globe"></i> Live Demo
+                            </button>
                         </div>
-                        <div class="card-footer">
-                            <div class="links">
-                                <i class="fa-brands fa-github m-1 iconHover" id="githubEmp"></i>
-                                <i class="fa-solid fa-arrow-up-right-from-square iconHover" id="deployEmp"></i>
-                            </div>
+                        
+                      </div>
+                  </div>
+                  <div class="laptop">
+                      <img class="laptop-img" src="assets/imgs/project7.png" alt="Package Icon">
+                      <div class="laptop-body">
+                          <h5>KTU Website 2.0</h5>
+                          <p class="description text-project">This project is a complete redesign of the KTU website, featuring a responsive layout and an enhanced, visually appealing user interface for seamless interaction..</p>
+                          <div class="link-icon">
+                            <button class="buttons-project github-btn" id="githubKtu">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </button>
+                            <button class="buttons-project live-btn" disabled>
+                                <i class="fa-solid fa-globe"></i> Live Demo
+                            </button>
                         </div>
-                    </div>
+                      </div>
+                  </div>
+                  <!-- <div class="laptop">
+                      <img class="laptop-img" src="assets/imgs/project2.png" alt="Package Icon">
+                      <div class="laptop-body">
+                          <h5>E-commerce Website</h5>
+                          <p class="description">
+                              Shop fresh groceries online and get them delivered fast with our Next.js-powered platform.
+                            </p>      
+                            <div class="link-icon">
+                              <i class="fa-brands fa-github m-1 iconHover" id="githubE"></i>
+                          </div>
+                      </div>
+                  </div> -->
+                  <div class="laptop">
+                      <img class="laptop-img" src="assets/imgs/project6.png" alt="Package Icon">
+                      <div class="laptop-body">
+                          <h5>Task Manager Application</h5>
+                          <p class="description text-project">The project improved the task manager application with a clean, responsive design for easy use and better task management.</p>
+                          <div class="link-icon">
+                            <button class="buttons-project github-btn" id="githubManage">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </button>
+                            <button class="buttons-project live-btn" id="deployManage">
+                                <i class="fa-solid fa-globe"></i> Live Demo
+                            </button>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- Add more project cards as needed -->
+              </div>
+        </div>
           
-    
-                <!-- Portfolio Item 3 -->             
-                    <div class="portfolio-card">
-                        <div class="card-header">
-                            <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
-                            <div class="project-info">
-                                <h5>Personalized Music App</h5>
-                                <p>Web Application</p>
-                            </div>
-                            <!-- <i class="fa-solid fa-star star-icon"></i> -->
-                        </div>
-                        <div class="card-body">
-                            <span class="status completed">COMPLETED</span>
-                            <p class="description">A personalized music app in React.js delivers a seamless experience with tailored playlists and recommendations.</p>
-                            <div class="technologies">
-                                <i class="devicon-react-original-wordmark colored"></i>
-                                <i class="devicon-javascript-plain colored"></i>                           
-                                <i class="devicon-axios-plain-wordmark colored"></i>
-                                <i class="devicon-express-original-wordmark"></i>
-                                <i class="devicon-mongodb-plain-wordmark colored"></i>
-                                <i class="devicon-tailwindcss-plain-wordmark colored"></i>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="links">
-                                <i class="fa-brands fa-github m-1 iconHover" id="githubMusic"></i>
-                                <i class="fa-solid fa-arrow-up-right-from-square iconHover" id="deployMusic"></i>
-                            </div>
-                        </div>
-                    </div>
+      </section>
 
-                <!-- Portfolio Item 4 -->       
-                    <div class="portfolio-card">
-                        <div class="card-header">
-                            <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
-                            <div class="project-info">
-                                <h5>Flood Prediction</h5>
-                                <p>Web Application</p>
-                            </div>
-                            <!-- <i class="fa-solid fa-star star-icon"></i> -->
-                        </div>
-                        <div class="card-body">
-                            <span class="status completed">COMPLETED</span>
-                            <p class="description">Our project focuses on predicting floods in various regions and sending alert messages to registered users.</p>
-                            <div class="technologies">
-                                <i class="devicon-html5-plain-wordmark colored"></i>
-                                <i class="devicon-css3-plain-wordmark colored"></i>
-                                <i class="devicon-javascript-plain colored"></i>
-                                <i class="devicon-python-plain-wordmark colored"></i>                       
-                             <i class="devicon-flask-original-wordmark colored"></i>     
-                             <i class="devicon-sqlite-plain-wordmark colored"></i>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="links">
-                                <i class="fa-brands fa-github m-1 iconHover" id="githubFlood"></i>
-                            </div>
-                        </div>
-                    </div>
 
-             <!-- Portfolio Item 5 -->
-                    <div class="portfolio-card">
-                        <div class="card-header">
-                            <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
-                            <div class="project-info">
-                                <h5>To Do Application</h5>
-                                <p>Web Application</p>
-                            </div>
-                            <!-- <i class="fa-solid fa-star star-icon"></i> -->
-                        </div>
-                        <div class="card-body">
-                            <span class="status completed">COMPLETED</span>
-                            <p class="description">A To-Do application helps users keep track of and manage their tasks.</p>
-                            <div class="technologies">
-                                <i class="devicon-html5-plain-wordmark colored"></i>
-                                <i class="devicon-css3-plain-wordmark colored"></i>
-                                <i class="devicon-javascript-plain colored"></i>
-                                <i class="devicon-react-original-wordmark colored"></i>
-                                <i class="devicon-express-original-wordmark"></i>
-                                <i class="devicon-mongodb-plain-wordmark colored"></i>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="links">
-                                <i class="fa-brands fa-github m-1 iconHover" id="githubToDo"></i>
-                                <i class="fa-solid fa-arrow-up-right-from-square iconHover" id="deployToDo"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                 <!-- Portfolio Item 6 -->
-                    <div class="portfolio-card">
-                        <div class="card-header">
-                            <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
-                            <div class="project-info">
-                                <h5>KTU Website 2.0</h5>
-                                <p>Web Application</p>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <span class="status completed">COMPLETED</span>
-                            <p class="description">The project upgraded the user interface and experience with a responsive, visually appealing design for smooth interaction.</p>
-                            <div class="technologies">
-                                <i class="devicon-html5-plain-wordmark colored"></i>
-                                <i class="devicon-css3-plain-wordmark colored"></i>
-                                <i class="devicon-javascript-plain colored"></i>
-                                <i class="devicon-react-original-wordmark colored"></i>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="links">
-                                <i class="fa-brands fa-github m-1 iconHover" id="githubKtu"></i>
-                              
-                            </div>
-                        </div>
-                    </div>
-                      <!-- Portfolio Item 7 -->
-                    <div class="portfolio-card">
-                        <div class="card-header">
-                            <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
-                            <div class="project-info">
-                                <h5>Task Manager Application</h5>
-                                <p>Web Application</p>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <span class="status completed">COMPLETED</span>
-                            <p class="description">The project improved the task manager application with a clean, responsive design for easy use and better task management.</p>
-                            <div class="technologies">
-                                <i class="devicon-react-original-wordmark colored"></i>                         
-                                <i class="devicon-axios-plain-wordmark colored"></i>
-                                <i class="devicon-express-original-wordmark"></i>
-                                <i class="devicon-mongodb-plain-wordmark colored"></i>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="links">
-                                <i class="fa-brands fa-github m-1 iconHover" id="githubManage"></i>
-                                <i class="fa-solid fa-arrow-up-right-from-square iconHover" id="deployManage"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                      <!-- Portfolio Item 8 -->
-                    <div class="portfolio-card">
-                        <div class="card-header">
-                            <img class="icon-img" src="assets/imgs/web.png" alt="Project Icon">
-                            <div class="project-info">
-                                <h5>E-commerce Website</h5>
-                                <p>Web Application</p>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <span class="status completed">IN PROGRESS</span>
-                            <p class="description">
-                                Shop fresh groceries online and get them delivered fast with our Next.js-powered platform.
-                              </p>                              
-                            <div class="technologies">
-                                <i class="devicon-nextjs-original-wordmark"></i>
-                                <i class="devicon-javascript-plain colored"></i>
-                                <i class="devicon-express-original-wordmark"></i>
-                                <i class="devicon-mongodb-plain-wordmark colored"></i>
-                                <i class="devicon-tailwindcss-plain-wordmark colored"></i>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="links">
-                                <i class="fa-brands fa-github m-1 iconHover" id="githubE"></i>
-                            </div>
-                        </div>
-                    </div>
-            </div><!-- end of row -->
-        </div><!-- end of container -->
-    </section> <!-- end of portfolio section -->
-    
-      
   <!-- Package Section -->
 <section class="section" id="packages">
     <div class="container text-center">
