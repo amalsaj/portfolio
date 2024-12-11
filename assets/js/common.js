@@ -44,24 +44,21 @@ function openUrl(elementId, url) {
 }  
 
 
-document.addEventListener('DOMContentLoaded', () => {
-  const elements = document.querySelectorAll('.pic1, .pic2, .pic3, .pic4, .pic5, .pic6, .laptop-img');
+// document.addEventListener('DOMContentLoaded', () => {
+//   const elements = document.querySelectorAll('.pic1, .pic2, .pic3, .pic4, .pic5, .pic6, .laptop-img');
+//   const observer = new IntersectionObserver(entries => {
+//     entries.forEach(entry => {
+//       if (entry.isIntersecting) {
+//         entry.target.classList.add('move');
+//         observer.unobserve(entry.target);
+//       }
+//     });
+//   }, { threshold: 0.5 });
 
-  // Create a single IntersectionObserver for all elements
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('move');
-        observer.unobserve(entry.target); // Stop observing after adding the class
-      }
-    });
-  }, { threshold: 0.5 });
-
-  // Observe all selected elements
-  elements.forEach(element => {
-    observer.observe(element);
-  });
-});
+//   elements.forEach(element => {
+//     observer.observe(element);
+//   });
+// });
 
   
 openUrl('githubFlood', 'https://github.com/amalsaj/Flood-Prediction-using-Machine-Learning');
