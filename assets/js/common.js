@@ -68,9 +68,11 @@ openUrl('githubMusic', 'https://github.com/amalsaj/personalizedMusicClient');
 openUrl('githubKtu', 'https://github.com/amalsaj/KTU-website-redesign-using-React');
 openUrl('githubToDo', 'https://github.com/amalsaj/todoClient');
 openUrl('githubManage', 'https://github.com/amalsaj/taskManagerClient');
-// openUrl('githubE', 'https://github.com/amalsaj/e-ecommerce');
+openUrl('githubEvent', 'https://github.com/amalsaj/eventServer');
+
 openUrl('deployEmp', 'https://employee-client-three.vercel.app/');
 openUrl('deployNetflix', 'https://netflix-clone2-0-xi.vercel.app/');
 openUrl('deployToDo', 'https://todo-client-mu-rosy.vercel.app/');
 openUrl('deployManage', 'https://task-manager-client-lake.vercel.app/');
 openUrl('deployMusic', 'https://personalized-music-client.vercel.app/');
+openUrl('deployEvent', 'https://event-client-mauve.vercel.app/');
