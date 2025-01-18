@@ -12985,7 +12985,8 @@ pre .code {
   font-size: 2.4rem;
   font-weight: bold;
   opacity: 0.8;
-  color: #212529;
+  color: #212529; 
+  font-family: 'Baloo Paaji', sans-serif;
 }
 
 .header-mini {
